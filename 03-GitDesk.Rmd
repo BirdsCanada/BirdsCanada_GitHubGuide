@@ -1,0 +1,51 @@
+# Setup GitHub Desktop {#Desk3}
+
+```{r tidyr3, echo = FALSE, message = FALSE, warning = FALSE}
+
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
+
+``` 
+
+You have chose to download and setup Github Desktop.
+
+## Step 1: Download {#Desk3.1}
+
+Download GitHub desktop from here: https://desktop.github.com/ 
+
+{-}
+```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git3.PNG")
+```
+
+Congratulations! You are now a GitHub user. 
+
+##Step 2:Create New Repo {#Desk3.2}
+
+Once everything is set up, log in to GitHub and create a new repository. You could in theory create just one repo and dump all your code in it. But you probably don’t have your code organized like that on your computer. Chances are you have your work organized (to some degree) in discreet folders that contain all the data and code relevant to a particular project. If so, that’s great; you’ll make a new git repo for each local folder.
+
+{-}
+```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git4.PNG")
+```
+
+> Recall that a git repo is largely analogous to a folder on your computer. If you keep all code and data for a particular project in its own folder on your computer give this new repo a name that reflects the project. 
+
+{-}
+```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git5.PNG")
+```
+
+You will notice a few option here when setting up your new repo. 
+
+- Repository name (required): Think short but concise.No spaces permitted
+
+- Public or Private Repo: if you create a public repo, anyone on Github can see your work and seamless collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions onto a Private repo. And you can change the privacy setting at a later date. 
+
+- Initialize this repository with: `README`, `.gitignore`, `license`. Is is good practice to include all three of these files in your repos. 
+
+`README` file can be used to add a short description of your project. 
+
+`.gitignore` will have a drop down menu of templates. Select the one specific to R. This files tell .git which files types to ignore in the repo (i.e. they won't be backed up on the GitHub cloud storage). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These should be added to the `.gitignore` file. Examples of how to di this will be provided later in the tutorial. 
+
+`Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). 
