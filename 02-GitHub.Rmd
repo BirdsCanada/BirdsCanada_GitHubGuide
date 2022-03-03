@@ -11,7 +11,7 @@ Trying to find instructions on how to use git and GitHub online is notoriously d
 
 > Doing X is easy. All you have to do is open up a terminal and type git -s -x -what -thehell -doesthisallevenmean
 
-Thankfully using git and GitHub is super easy and you don’t have to use the command line at all to benefit from these tools. 
+Thankfully, using git and GitHub is super easy and you don’t have to use the command line at all to benefit from these tools. 
 
 To get started, it is important to know what git and GitHub are and how they differ.
 
@@ -33,30 +33,30 @@ If you’re a fancy pants programmer you may want to use git from the command li
 
 ## Git to GitHub GUI {#Git2.3}
 
-There are multiple graphical interfaces for using git and GitHub. This document will provide instructions for two methods: GitHub Desktop and RStudio. **Link to Chapters** 
+There are multiple graphical interfaces for using git and GitHub. This document will provide instructions for two methods: [GitHub Desktop](#Desk3) and [RStudio](#RStud4). **Link to Chapters** 
 
 Which option is for you? 
 
-- If you are not actively developing R code, and just want/need to get existing files into GitHub, GitHub Desktop is the easiest method, with the least amount of configuration. 
+- If you are not actively developing R code, or just need to get existing files into GitHub, GitHub Desktop is the easiest method, with the least amount of configuration. 
 
-- If you are actively writing analytical scripts, then using RStudio is recommend for you because there will be some additional instructions for using R Projects to best organize and annotate your R code.  
+- If you are actively writing analytical scripts in R, then using RStudio is recommend for you because there will be some additional instructions for using R Projects to organize your workflow and annotate your R code.  
 
-Keep in mind you can always use both to interact with your git repos.  
+> You can use multiple git GUI at the same time without any issues so feel free to set up both.   
 
-## Getting Started
+## Getting Started {#Git2.4}
 
 Regardless of the GUI you select to use, there are a few steps you need to take to get started. 
 
 First, get the software and account that you need:
 
-1.	download and install git on your computer from here: https://git-scm.com/downloads
+1.	Download and install git on your computer from here: https://git-scm.com/downloads
 
 {-}
 ```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git1.PNG")
 ```
 
-2.	sign up for a GitHub account here:
+2.	Sign up for a GitHub account here:
 https://github.com/join 
 
 {-}
@@ -64,16 +64,8 @@ https://github.com/join
 knitr::include_graphics("images/Git2.PNG")
 ```
 
-Now you are ready to become a git master. Chapter 3 will get you started with GitHub Desktop and Chapter 4 will get you started with RStudio. Choose your own adventure! 
+Now you are ready to become a git master. [Chapter 3](#Desk3) will get you started with GitHub Desktop and [Chapter 4](#RStud4) will get you started with RStudio. 
 
-
-
-3.	download GitHub desktop from here: https://desktop.github.com/ 
-
-Once everything is set up, log in to GitHub and create a new repository. You could in theory create just one repo and dump all your code in it. But you probably don’t have your code organized like that on your computer. Chances are you have your work organized (to some degree) in discreet folders that contain all the data and code relevant to a particular project. If so that’s great; you’ll make a new git repo for each local folder.
-
-
-
-
+Choose your own adventure! 
 
 

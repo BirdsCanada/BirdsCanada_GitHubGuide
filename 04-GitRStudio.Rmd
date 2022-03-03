@@ -1,0 +1,26 @@
+# Working with Git in RStudio {#RStud4}
+
+```{r tidyr4, echo = FALSE, message = FALSE, warning = FALSE}
+
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
+
+``` 
+
+You have chose to download and setup git in RStudio. This is a great option if you are actively coding. 
+
+## Step 1: Configure RStudio {#RStud4.1}
+
+Since you already have [git installed on your computer](#Git2.4), simply open RStudio and go to `Tools` > `Global Options`. Ensure that `Enable version control` is checked and that the Git executable is the proper path on your computer. There’s a good chance this will already be populated. If not, it’s probably in a very similar location on your computer as shown below. 
+
+{-}
+```{r image, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git11.PNG")
+```
+
+It is also best to change a few other settings in RStudio if you’re working with git, namely so that RStudio never saves the workspace. This keeps locally specific files that could give problems on other computers for other people, out of your git repo.
+
+{-}
+```{r image, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git12.PNG")
+```
