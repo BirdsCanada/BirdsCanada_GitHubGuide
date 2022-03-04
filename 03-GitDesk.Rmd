@@ -14,7 +14,7 @@ You have chose to download and setup Github Desktop. This is a great option if y
 Download GitHub desktop from here: https://desktop.github.com/ 
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git3.PNG")
 ```
 
@@ -23,14 +23,14 @@ knitr::include_graphics("images/Git3.PNG")
 Once everything is set up, log in to GitHub and create a new repository. You could in theory create just one repo and dump all your code in it. But you probably don’t have your code organized like that on your computer. Chances are you have your work organized (to some degree) in discreet folders that contain all the data and code relevant to a particular project. If so, that’s great; you’ll make a new git repo for each project in your local folder.
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git4.PNG")
 ```
 
 > Recall that a git repo is largely analogous to a folder on your computer. If you keep all code and data for a particular project in its own folder on your computer, give this new repo a name that reflects the project. 
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git5.PNG")
 ```
 
@@ -55,7 +55,7 @@ You will notice a few option here when setting up your new repo.
 Once you have selected `Create Repositroy` you’ll be brought to the next page with an option to `Set up in Desktop`. Click that and it will open up GitHub Desktop. You may need to log in to GitHub Desktop to authorize it.
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git6.PNG")
 ```
 
@@ -68,7 +68,7 @@ In GitHub Desktop you’ll be prompted for where on your local computer you want
 Click `clone` and the repo you just created in GitHub will be copied (cloned) onto your local computer to be tracked by git. 
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git7.PNG")
 ```
 
@@ -79,14 +79,14 @@ You now have a git repo on your computer. Now you are going to copy over your .t
 Here is an example using an "old code.txt" file and a folder named "stuff inside a folder in my repo". 
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git8.PNG")
 ```
 
 Git keeps track of all changes inside a folder in near real-time, so almost as soon as you copy files into your new git repo, you will see them reflected in GitHub Desktop. 
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git9.PNG")
 ```
 
@@ -107,7 +107,7 @@ Here are a few examples:
  - fix broken web links
 
 {-}
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
+```{r  image, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git10.PNG")
 ```
 
