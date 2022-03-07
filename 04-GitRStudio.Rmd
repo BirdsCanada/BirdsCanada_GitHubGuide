@@ -20,13 +20,13 @@ The assumption was made that you have downloaded and are familiar with [R](https
 Once everything is set up, log in to GitHub and create a new repository. You’ll make a new .git repo for each R Project.
 
 {-}
-```{r image9, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/Git4.PNG")
+```{r image13, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git4a.PNG")
 ```
 
 {-}
-```{r image10, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/Git5.PNG")
+```{r image14, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("images/Git5a.PNG")
 ```
 
 You will notice a few option here when setting up your new repo. 
@@ -50,14 +50,14 @@ You will notice a few option here when setting up your new repo.
 Since you already have [.git installed on your computer](#Git2.4), simply open RStudio and go to `Tools` > `Global Options`. Ensure that `Enable version control` is checked and that the Git executable is the proper path on your computer. There’s a good chance this will already be populated. If not, it’s probably in a very similar location on your computer as shown below. 
 
 {-}
-```{r image12, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image15, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git11.PNG")
 ```
 
 It is also best to change a few other settings in RStudio if you’re working with .git, namely so that RStudio never saves the workspace. This keeps locally specific files that could give problems on other computers for other people, out of your git repo.
 
 {-}
-```{r image13, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image16, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git12.PNG")
 ```
 
@@ -71,7 +71,7 @@ A: An RStudio project file is a file that sits in the root directory, with the e
 Now you will initialize your local .git repo directly from RStudio. To achieve this, you’ll need to copy the repo URL in GitHub
 
 {-}
-```{r image14, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image17, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git13.PNG")
 ```
 
@@ -80,7 +80,7 @@ Then open RStudio and select `New Project` from the File menu, and then select `
 > Note: don’t choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.
 
 {-}
-```{r image15, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image18, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git14.PNG")
 ```
 
@@ -89,7 +89,7 @@ You have just created a `clone` of the `origin` repo onto your local computer to
 Now all of your interactions between .git and GitHub can happen through RStudio using the new `Git` tab, that will likely live alongside you Environments/History/File/Plots, ect. The exact location will depend on how you have your RStudio configured. 
 
 {-}
-```{r image16, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image19, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git15.PNG")
 ```
 
@@ -98,7 +98,7 @@ knitr::include_graphics("images/Git15.PNG")
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
 {-}
-```{r image17, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image20, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git16.PNG")
 ```
 
