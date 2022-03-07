@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Working with Git in RStudio | R Code Annotation and Achieving with GitHub: A Beginners Guide</title>
+  <meta name="description" content="Promoting R code annotation and achiving standards within Birds Canada" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Working with Git in RStudio | R Code Annotation and Achieving with GitHub: A Beginners Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/DMEthier/BirdsCanada_RCodeArchiving.git" />
+  <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_RCodeArchiving.git/BirdsCan.PNG" />
+  <meta property="og:description" content="Promoting R code annotation and achiving standards within Birds Canada" />
+  <meta name="github-repo" content="DMEthier/BirdsCanada_RCodeArchiving" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Working with Git in RStudio | R Code Annotation and Achieving with GitHub: A Beginners Guide" />
+  
+  <meta name="twitter:description" content="Promoting R code annotation and achiving standards within Birds Canada" />
+  <meta name="twitter:image" content="https://github.com/DMEthier/BirdsCanada_RCodeArchiving.git/BirdsCan.PNG" />
+
+<meta name="author" content="Danielle Ethier and Josh Sayers" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Desk3.html"/>
+
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="mystyles.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">R Code Annotation and Achieving with GitHub: A Beginners Guide</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="1" data-path="Intro1.html"><a href="Intro1.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Intro1.html"><a href="Intro1.html#intro1.1"><i class="fa fa-check"></i><b>1.1</b> Why is R Code Annotation and Achieving Important?</a></li>
+<li class="chapter" data-level="1.2" data-path="Intro1.html"><a href="Intro1.html#intro1.2"><i class="fa fa-check"></i><b>1.2</b> Prerequisites</a></li>
+<li class="chapter" data-level="1.3" data-path="Intro1.html"><a href="Intro1.html#intro1.3"><i class="fa fa-check"></i><b>1.3</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Git2.html"><a href="Git2.html"><i class="fa fa-check"></i><b>2</b> What are Git and GitHub?</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Git2.html"><a href="Git2.html#Git2.1"><i class="fa fa-check"></i><b>2.1</b> Git</a></li>
+<li class="chapter" data-level="2.2" data-path="Git2.html"><a href="Git2.html#Git2.2"><i class="fa fa-check"></i><b>2.2</b> GitHub</a></li>
+<li class="chapter" data-level="2.3" data-path="Git2.html"><a href="Git2.html#Git2.3"><i class="fa fa-check"></i><b>2.3</b> Speaking .git language</a></li>
+<li class="chapter" data-level="2.4" data-path="Git2.html"><a href="Git2.html#Git2.4"><i class="fa fa-check"></i><b>2.4</b> .git to GitHub GUI</a></li>
+<li class="chapter" data-level="2.5" data-path="Git2.html"><a href="Git2.html#Git2.5"><i class="fa fa-check"></i><b>2.5</b> Getting Started</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Desk3.html"><a href="Desk3.html"><i class="fa fa-check"></i><b>3</b> Setup GitHub Desktop</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Desk3.html"><a href="Desk3.html#Desk3.1"><i class="fa fa-check"></i><b>3.1</b> Step 1: Download</a></li>
+<li class="chapter" data-level="3.2" data-path="Desk3.html"><a href="Desk3.html#Desk3.3"><i class="fa fa-check"></i><b>3.2</b> Step 3: Set up Desktop</a></li>
+<li class="chapter" data-level="3.3" data-path="Desk3.html"><a href="Desk3.html#Desk3.4"><i class="fa fa-check"></i><b>3.3</b> Step 4: Copy files into your local .git repo</a></li>
+<li class="chapter" data-level="3.4" data-path="Desk3.html"><a href="Desk3.html#Desk3.5"><i class="fa fa-check"></i><b>3.4</b> Step 5: Upload to GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="RStud4.html"><a href="RStud4.html"><i class="fa fa-check"></i><b>4</b> Working with Git in RStudio</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="RStud4.html"><a href="RStud4.html#RStud4.1"><i class="fa fa-check"></i><b>4.1</b> Step 1: Download</a></li>
+<li class="chapter" data-level="4.2" data-path="RStud4.html"><a href="RStud4.html#RStud4.3"><i class="fa fa-check"></i><b>4.2</b> Step 3: Configure RStudio</a></li>
+<li class="chapter" data-level="4.3" data-path="RStud4.html"><a href="RStud4.html#RStud4.4"><i class="fa fa-check"></i><b>4.3</b> Step 4: Initializing a .git repo from RStudio</a></li>
+<li class="chapter" data-level="4.4" data-path="RStud4.html"><a href="RStud4.html#RStud4.5"><i class="fa fa-check"></i><b>4.4</b> Step 5: Link RStudio to exisiting local .git repo</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R Code Annotation and Achieving with GitHub: A Beginners Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="RStud4" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Working with Git in RStudio</h1>
+<p>You have chose to download and setup git in RStudio. This is a great option if you are actively coding.</p>
+<div id="RStud4.1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Step 1: Download</h2>
+<p>The assumption was made that you have downloaded and are familiar with <a href="https://cran.r-project.org/bin/windows/base/">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>. But if you secretly need to download and get yourself familiar with these program, you can do that now.</p>
+<p>##Step 2: Create New Repo {#RStud4.2}</p>
+<blockquote>
+<p>Recall: all .git repos that are backup on the cloud are initilized from Github. This is refered to the <code>origin</code> repo.</p>
+</blockquote>
+<p>Once everything is set up, log in to GitHub and create a new repository. You’ll make a new .git repo for each R Project.</p>
+<p>{-}
+<img src="images/Git4a.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>{-}
+<img src="images/Git5a.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>You will notice a few option here when setting up your new repo.</p>
+<ul>
+<li><p>Repository name (required): Think short but concise.No spaces permitted. Also, each repo must have a unique name.</p></li>
+<li><p>Public or Private repo: if you create a public repo, anyone on Github can see your work and seamless collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.</p></li>
+<li><p>Initialize this repository with: <code>README</code>, <code>.gitignore</code>, <code>license</code>: it is good practice to include all three of these files in your repo.</p></li>
+</ul>
+<pre><code>`README` file can be used to add a short description of your project. 
+
+`.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell .git which files types to ignore in the repo (i.e. they won&#39;t be backed up on the GitHub cloud storage). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file. Example: you may want to add `.csv` to exclude raw data files. 
+
+`Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). </code></pre>
+</div>
+<div id="RStud4.3" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Step 3: Configure RStudio</h2>
+<p>Since you already have <a href="Git2.html#Git2.4">.git installed on your computer</a>, simply open RStudio and go to <code>Tools</code> &gt; <code>Global Options</code>. Ensure that <code>Enable version control</code> is checked and that the Git executable is the proper path on your computer. There’s a good chance this will already be populated. If not, it’s probably in a very similar location on your computer as shown below.</p>
+<p>{-}
+<img src="images/Git11.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>It is also best to change a few other settings in RStudio if you’re working with .git, namely so that RStudio never saves the workspace. This keeps locally specific files that could give problems on other computers for other people, out of your git repo.</p>
+<p>{-}
+<img src="images/Git12.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<blockquote>
+<p>Note: when working with .git in RStudio you must use <code>R Projects</code>. Each repo will be associated with a single <code>R Project</code>.</p>
+</blockquote>
+<p>Q: What is an R Project?
+A: An RStudio project file is a file that sits in the root directory, with the extension .Rproj. When your RStudio session is running through the project file (.Rproj), the current working directory points to the root folder where that .Rproj file is saved. It may seem like a radical move to abandon the <code>setwd()</code>orthodox entirely, but once you have figured out the <a href="Chapter%20X%20link">R Project Workflow</a> you’ll never consider using absolute file paths again! This is also fundamental aspect of creating shareable and reproducible scripts.</p>
+</div>
+<div id="RStud4.4" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Step 4: Initializing a .git repo from RStudio</h2>
+<p>Now you will initialize your local .git repo directly from RStudio. To achieve this, you’ll need to copy the repo URL in GitHub</p>
+<p>{-}
+<img src="images/Git13.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>Then open RStudio and select <code>New Project</code> from the File menu, and then select <code>Version Control</code> &gt; <code>Git</code>. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo.</p>
+<blockquote>
+<p>Note: don’t choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.</p>
+</blockquote>
+<p>{-}
+<img src="images/Git14.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>You have just created a <code>clone</code> of the <code>origin</code> repo onto your local computer to be tracked by .git.</p>
+<p>Now all of your interactions between .git and GitHub can happen through RStudio using the new <code>Git</code> tab, that will likely live alongside you Environments/History/File/Plots, ect. The exact location will depend on how you have your RStudio configured.</p>
+<p>{-}
+<img src="images/Git15.PNG" width="700px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="RStud4.5" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Step 5: Link RStudio to exisiting local .git repo</h2>
+<p>If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a <code>New Project</code> from the File menu in RStudio and select <code>Existing Directory</code>. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.</p>
+<p>{-}
+<img src="images/Git16.PNG" width="700px" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Desk3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

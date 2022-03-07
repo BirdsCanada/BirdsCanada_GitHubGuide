@@ -53,7 +53,7 @@ It is also best to change a few other settings in RStudio if you’re working wi
 Q: What is an R Project? 
 A: An RStudio project file is a file that sits in the root directory, with the extension .Rproj. When your RStudio session is running through the project file (.Rproj), the current working directory points to the root folder where that .Rproj file is saved. It may seem like a radical move to abandon the `setwd()`orthodox entirely, but once you have figured out the [R Project Workflow](Chapter X link) you'll never consider using absolute file paths again! This is also fundamental aspect of creating shareable and reproducible scripts. 
 
-# Step 4: Initializing a .git repo from RStudio {#RStud4.4}
+## Step 4: Initializing a .git repo from RStudio {#RStud4.4}
 
 Now you will initialize your local .git repo directly from RStudio. To achieve this, you’ll need to copy the repo URL in GitHub
 
@@ -74,7 +74,7 @@ Now all of your interactions between .git and GitHub can happen through RStudio 
 {-}
 <img src="images/Git15.PNG" width="700px" style="display: block; margin: auto;" />
 
-# Step 5: Link RStudio to exisiting local .git repo
+## Step 5: Link RStudio to exisiting local .git repo {#RStud4.5}
 
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
