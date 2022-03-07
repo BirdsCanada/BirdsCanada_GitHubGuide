@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 documentclass: book
 biblio-style: apalike
 link-citations: yes
-github-repo: DMEthier/PFW
+github-repo: DMEthier/BirdsCanada_RCodeArchiving
 url: 'https://github.com/DMEthier/BirdsCanada_RCodeArchiving.git'
 description: "Promoting R code annotation and achiving standards within Birds Canada"
 cover-image: BirdsCan.PNG
