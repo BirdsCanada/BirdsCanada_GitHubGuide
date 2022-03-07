@@ -10,11 +10,14 @@ Git2.4
 Git2.5
 Desk3
 Desk3.1
+Desk3.2
 Desk3.3
 Desk3.4
 Desk3.5
 RStud4
 RStud4.1
+RStud4.2
 RStud4.3
 RStud4.4
 RStud4.5
+RStud4.6

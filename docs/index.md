@@ -1,6 +1,6 @@
 --- 
-title: "R Code Annotation and Achieving with GitHub: A Beginners Guide"
-author: "Danielle Ethier and Josh Sayers"
+title: "R Code Annotation, Sharing, and Achieving with GitHub: A Beginners Guide"
+author: "Danielle Ethier and Josh Sayers, Birds Canada"
 date: "Version 1: March 2022"
 site: bookdown::bookdown_site
 documentclass: book

@@ -8,16 +8,12 @@ You have chose to download and setup git in RStudio. This is a great option if y
 
 The assumption was made that you have downloaded and are familiar with [R](https://cran.r-project.org/bin/windows/base/) and [RStudio](https://www.rstudio.com/products/rstudio/download/). But if you secretly need to download and get yourself familiar with these program, you can do that now.  
 
-##Step 2: Create New Repo {#RStud4.2}
-
-> Recall: all .git repos that are backup on the cloud are initilized from Github. This is refered to the `origin` repo. 
+## Step 2: Create New Repo {#RStud4.2}
 
 Once everything is set up, log in to GitHub and create a new repository. You’ll make a new .git repo for each R Project.
 
-{-}
 <img src="images/Git4a.PNG" width="700px" style="display: block; margin: auto;" />
 
-{-}
 <img src="images/Git5a.PNG" width="700px" style="display: block; margin: auto;" />
 
 You will notice a few option here when setting up your new repo. 
@@ -28,27 +24,25 @@ You will notice a few option here when setting up your new repo.
 
 - Initialize this repository with: `README`, `.gitignore`, `license`: it is good practice to include all three of these files in your repo. 
 
-~~~
 `README` file can be used to add a short description of your project. 
 
 `.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell .git which files types to ignore in the repo (i.e. they won't be backed up on the GitHub cloud storage). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file. Example: you may want to add `.csv` to exclude raw data files. 
 
 `Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). 
-~~~
+
+> Recall: all .git repos that are backup on the cloud are initilized from Github. This is refered to the `origin` repo. 
 
 ## Step 3: Configure RStudio {#RStud4.3}
 
 Since you already have [.git installed on your computer](#Git2.4), simply open RStudio and go to `Tools` > `Global Options`. Ensure that `Enable version control` is checked and that the Git executable is the proper path on your computer. There’s a good chance this will already be populated. If not, it’s probably in a very similar location on your computer as shown below. 
 
-{-}
 <img src="images/Git11.PNG" width="700px" style="display: block; margin: auto;" />
 
 It is also best to change a few other settings in RStudio if you’re working with .git, namely so that RStudio never saves the workspace. This keeps locally specific files that could give problems on other computers for other people, out of your git repo.
 
-{-}
 <img src="images/Git12.PNG" width="700px" style="display: block; margin: auto;" />
 
-> Note: when working with .git in RStudio you must use `R Projects`. Each repo will be associated with a single `R Project`.  
+When working with .git in RStudio you must use `R Projects`. Each repo will be associated with a single `R Project`.  
 
 Q: What is an R Project? 
 A: An RStudio project file is a file that sits in the root directory, with the extension .Rproj. When your RStudio session is running through the project file (.Rproj), the current working directory points to the root folder where that .Rproj file is saved. It may seem like a radical move to abandon the `setwd()`orthodox entirely, but once you have figured out the [R Project Workflow](Chapter X link) you'll never consider using absolute file paths again! This is also fundamental aspect of creating shareable and reproducible scripts. 
@@ -57,27 +51,67 @@ A: An RStudio project file is a file that sits in the root directory, with the e
 
 Now you will initialize your local .git repo directly from RStudio. To achieve this, you’ll need to copy the repo URL in GitHub
 
-{-}
 <img src="images/Git13.PNG" width="700px" style="display: block; margin: auto;" />
 
 Then open RStudio and select `New Project` from the File menu, and then select `Version Control` > `Git`. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo. 
 
 > Note: don’t choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.
 
-{-}
 <img src="images/Git14.PNG" width="700px" style="display: block; margin: auto;" />
 
 You have just created a `clone` of the `origin` repo onto your local computer to be tracked by .git. 
 
 Now all of your interactions between .git and GitHub can happen through RStudio using the new `Git` tab, that will likely live alongside you Environments/History/File/Plots, ect. The exact location will depend on how you have your RStudio configured. 
 
-{-}
 <img src="images/Git15.PNG" width="700px" style="display: block; margin: auto;" />
 
-## Step 5: Link RStudio to exisiting local .git repo {#RStud4.5}
+## Step 5: Stage, committ and push {#RStud4.5}
+
+Now you are ready to start interacting with GitHub from RStudio. 
+
+Here are some very basic instructions to get you started: as you are going about your regular coding business working in an `R Project`, the .git extension will be keeping track of the changes you make to the files in this repo. To move these changes from your local repo back to the `origin` on the cloud, there are three simple steps to follow: `stage`, `committ`, and `push`.
+
+From the `Git` tab in RStudio, you will see check boxes under the word `staged`. This allows you to select which changes you are going to move to the GitHub `origin` repo.
+
+<img src="images/Git17.PNG" width="700px" style="display: block; margin: auto;" />
+
+Now that you have `staged` your changes, we are going to select  `committ`. 
+
+<img src="images/Git18.PNG" width="700px" style="display: block; margin: auto;" />
+
+Every `commit` must be accompanied by a summary. It can be anything, but it’s helpful to make it short, clear, and descriptive so you know what changes are represented in that commit. Regardless of method used to interact with git --- GitHub Desktop, RStudio, command line --- you must always provide a summary when committing.
+
+Here are a few examples to help you get started: 
+
+- first commit of data analysis code
+
+- major updates to analysis. GLM to GAM
+
+- changes to trends plots
+
+- fix broken web links
+
+When you `commit` changes, .git saves every detail about the current state of the folder at that moment. 
+
+This is one of the most confusing things about git when you are just beginning because the word `commit` is both a verb and a noun. Once you commit (verb) the current state of your .git repo/folder it’s referred to as a commit (noun).
+
+Really if we were being grammatically correct, we would probably refer to it as a commitment, or something like that. But as it stands, the word `commit` is used for both the process and the state. 
+
+<img src="images/Git19.PNG" width="700px" style="display: block; margin: auto;" />
+
+Once you’ve committed to your local repo you can `push` these changes to GitHub. 
+
+<img src="images/Git20.PNG" width="700px" style="display: block; margin: auto;" />
+
+
+Now your files you tracked by .git and uploaded to GitHub. 
+
+> Note: all .git repos are initilized first in GitHub, the cloud version is the primary copy, referred to as the `origin`. 
+
+
+## Step 6: Link RStudio to exisiting local .git repo {#RStud4.6}
 
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
-{-}
 <img src="images/Git16.PNG" width="700px" style="display: block; margin: auto;" />
 

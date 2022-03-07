@@ -36,6 +36,7 @@ If you’re a fancy pants programmer you may want to use git from the command li
 ```{r image1, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git0.PNG")
 ```
+Image credit: devmountain.com
 
 ## .git the language {#Git2.3}
 
@@ -101,6 +102,8 @@ knitr::include_graphics("images/Git2.PNG")
 ```
 
 Now you are ready to become a git master. [Chapter 3](#Desk3) will get you started with GitHub Desktop and [Chapter 4](#RStud4) will get you started with RStudio. 
+
+Some elements of these Chapter are repetitive so that users can choose one or the other. If you choose to go with both, then skim over the repetitive parts. 
 
 Choose your own adventure! 
 
