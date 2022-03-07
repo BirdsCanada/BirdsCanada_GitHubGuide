@@ -1,7 +1,7 @@
 book_filename: "R Code Annotation and Achieving: A Beginners Guide"
 chapter_name: "Chapter "
-repo: https://github.com/DMEthier/PFW
+repo: https://github.com/DMEthier/BirdsCanada_RCodeArchiving
 output_dir: docs
-rmd_files: ["index.Rmd", "01-PFWIntroduction.Rmd", "02-PWFDataManipulation.Rmd", "03-PFWZeroFillMatrix.Rmd", "04-PFWSummaryStats.Rmd", "05-PFWEffortStats.Rmd"]
+rmd_files: ["index.Rmd", "01-Intro.Rmd", "02-GitHub.Rmd", "03-GitDesk.Rmd", "04-GitRStudio.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
