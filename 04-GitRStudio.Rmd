@@ -140,7 +140,7 @@ Now your files you tracked by .git and uploaded to GitHub.
 
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
-```{r image20, echo=FALSE, out.width="700px", fig.align='center'}
+```{r image24, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git16.PNG")
 ```
 
