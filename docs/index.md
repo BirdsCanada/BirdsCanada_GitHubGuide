@@ -1,4 +1,4 @@
---- 
+---
 title: "GitHub: A Beginners Guide"
 author: "Danielle Ethier and Josh Sayers, Birds Canada"
 date: "Version 1: March 2022"
@@ -12,9 +12,6 @@ description: "Promoting R code sharing and achiving standards within Birds Canad
 cover-image: BirdsCan.PNG
 ---
 
-# {-}
+#  {.unnumbered}
 
-<img src="images/BirdsCan.PNG" width="700px" style="display: block; margin: auto;" />
-
-
-
+<img src="images/BirdsCan.PNG" width="700px" style="display: block; margin: auto;"/>
