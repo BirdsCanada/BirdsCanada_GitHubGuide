@@ -16,7 +16,7 @@ Image credit: devmountian.com
 
 *Git* is software that (usually) runs on your computer. It is used to tracks all changes within a particular folder. Any change within that folder --- a deleted file, a new line in a file, or a single changed letter in a single file --- is tracked. It’s as if Microsoft word’s “Track Changes” function donned a cape, started solving crime, and kept meticulous notes all the while. 
 
-A folder on your computer that is tracked by .git is called a `repository` or `repo` for short. The only difference between a .git repo and a regular folder on your computer is that a git repo has a folder within it named .git. It’s within this .git folder that all the changes in the main folder are tracked. Other than that, a git repo is just a folder on your computer like any other, but with new and wonderful powers. 
+A folder on your computer that is tracked by .git is called a `repository` or `repo` for short. The main difference between a .git repo and a regular folder on your computer is that a git repo has a folder within it named .git. It’s within this .git folder that all the changes in the main folder are tracked. Other than that, a git repo is just a folder on your computer like any other, but with new and wonderful powers. 
 
 ## GitHub {#Git2.2}
 
@@ -37,29 +37,27 @@ Were you the kid that was tormented by your siblings speaking Pig Latin (also kn
 
 When working with .git and GitHub, you are going to see the words `repo`, `origin`, `commit`, `push`, `pull`, `clone`, `fork`, and `branch`, among others. We will start with some basic definitions here, and in later chapters will elaborate on terms as necessary. 
 
-**repo(sitory)** - one or more folders that have .git functionality. GitHub repos are initiated and stored on the cloud 
+**repo(sitory)** - a folder whose contents are is tracked by Git. A repo can exist locally (on your computer) as a remote repository (on GitHub), or both.
 
-**origin** - the original .git repo, which is initialized in GitHub
+**origin** - the primary .git repo, against which other copies are compared. In our examples, we will create the origin repo in GitHub
 
-**Push** - sends changes from your local .git repo to the cloud
+**Push** - sends changes from your local .git repo to the remote reposotiry (e.g. GitHub)
 
 **Pull** - gets changes from the cloud and updates your local .git repo
 
-> Note: this is different from a `pull request` which is when you want someone else to incorporate your changes into thier GitHub repo. More on this later.
+> Note: this is different from a `pull request` which is when you want someone else to incorporate your changes into their GitHub repo. More on this later.
 
-**commit** - create a named version of a set of one or more changes to a local .git repo, to be pushed to the cloud 
+**commit** - create a named version of a set of one or more changes to a local .git repo, to be pushed to the cloud. Also used to refer to this named state. In other words, when you commit your changes, you create a commit.
 
-Now here are some terms that can cause confusion: 
+**clone** - creates a copy of a git repo. In our examples you the repos will first be created in GitHub (i.e., origin) and then cloned to your local .git repo on your computer.
 
-**clone** - creates a copy of your GitHub repo on your local computer so that you can sync with the original repo. All .git repos are first created on the cloud (i.e., origin) and then cloned to your local .git repo on your computer. 
-
-> Note: if you clone a repo from someone else GitHub account, you cannot contribute to the repo unless you are a collaborator. Generally, you will make a `folk` if you are working collaboratively on a repo.  
+> Note: if you clone a repo from someone else GitHub account, you cannot contribute to the repo unless. Generally, you will make a `fork` if you are working collaboratively on a repo.  
 
 **fork** - creates a copy of a repo which maintained a connection between your local repo and the origin repo. Think of a folk as a bridge between the original repo and the local copy where changes can be made. After making and testing changes, you can contribute back to the original repo using a `pull request`. 
 
 **branch** - is a new/separate version of the main repo. It is a way to develop new or modification to your R scripts, while not affecting the main part of the project. It is a feature in most version control systems. 
 
-> Note: the primary or default branch in Git is the `master branch` (similar to a trunk of the tree). As soon as a repo is created, so is the master branch.
+> Note: the primary or default branch in Git is the `master branch` (sometimes referred to as `main` branch). Think of the master branch as the trunk of the tree. Every repo contains at minimum this one branch, which is created when the repo is initialized.
 
 ## .git to GitHub GUI {#Git2.4}
 
