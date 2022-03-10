@@ -1,1 +1,1 @@
-# BirdsCanada_RCodeArchiving
+# BirdsCanada_GitHubGuide
