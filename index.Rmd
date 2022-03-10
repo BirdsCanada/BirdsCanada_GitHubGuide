@@ -1,5 +1,5 @@
 --- 
-title: "GitHub A Beginners Guide"
+title: "GitHub: A Beginners Guide"
 author: "Danielle Ethier and Josh Sayers, Birds Canada"
 date: "Version 1: March 2022"
 site: bookdown::bookdown_site
