@@ -129,11 +129,11 @@
 <p>You have chose to download and setup git in RStudio. This is a great option if you are actively coding.</p>
 <div id="RStud4.1" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Step 1: Download</h2>
-<p>The assumption was made that you have downloaded and are familiar with <a href="https://cran.r-project.org/bin/windows/base/">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>. But if you secretly need to download and get yourself familiar with these program, you can do that now.</p>
+<p>The assumption was made that you have downloaded and are familiar with <a href="https://cran.r-project.org/bin/windows/base/">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>. But if you secretly need to download and get yourself familiar with these programs, you can do that now.</p>
 </div>
 <div id="RStud4.2" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Step 2: Create New Repo</h2>
-<p>Once everything is set up, log in to GitHub and create a new repository. You’ll make a new .git repo for each R Project.</p>
+<p>Once everything is set up, log in to GitHub and create a new repository. You’ll make a new .git repo for each <code>R Project</code>.</p>
 <p><img src="images/Git4a.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p><img src="images/Git5a.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p>You will notice a few option here when setting up your new repo.</p>
@@ -156,8 +156,8 @@
 <p>It is also best to change a few other settings in RStudio if you’re working with .git, namely so that RStudio never saves the workspace. This keeps locally specific files that could give problems on other computers for other people, out of your git repo.</p>
 <p><img src="images/Git12.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p>When working with .git in RStudio you must use <code>R Projects</code>. Each repo will be associated with a single <code>R Project</code>.</p>
-<p>Q: What is an R Project?
-A: An RStudio project file is a file that sits in the root directory, with the extension .Rproj. When your RStudio session is running through the project file (.Rproj), the current working directory points to the root folder where that .Rproj file is saved. It may seem like a radical move to abandon the <code>setwd()</code>orthodox entirely, but once you have figured out the <a href="Chapter%20X%20link">R Project Workflow</a> you’ll never consider using absolute file paths again! This is also fundamental aspect of creating shareable and reproducible scripts.</p>
+<p>Q: What is an R Project?</p>
+<p>A: An RStudio project file is a file that sits in the root directory, with the extension .Rproj. When your RStudio session is running through the project file (.Rproj), the current working directory points to the root folder where that .Rproj file is saved. It may seem like a radical move to abandon the <code>setwd()</code>orthodox entirely, but once you have figured out the R Project Workflow you’ll never consider using absolute file paths again! This is also fundamental aspect of creating shareable and reproducible scripts.</p>
 </div>
 <div id="RStud4.4" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Step 4: Initializing a .git repo from RStudio</h2>
@@ -178,7 +178,7 @@ A: An RStudio project file is a file that sits in the root directory, with the e
 <div id="RStud4.5" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Step 5: Stage, commit and push</h2>
 <p>Now you are ready to start interacting with GitHub from RStudio.</p>
-<p>Here are some very basic instructions to get you started: as you are going about your regular coding business working in an <code>R Project</code>, the Git will be keeping track of the changes you make to the files in this repo. To move these changes from your local repo back to the <code>origin</code> on the cloud, there are four simple steps to follow: <code>stage</code>, <code>commit</code>, <code>pull</code>, and <code>push</code>.</p>
+<p>Here are some very basic instructions to get you started. As you are going about your regular coding business working in an <code>R Project</code>, the .git will be keeping track of the changes you make to the files in this repo. To move these changes from your local repo back to the <code>origin</code> on the cloud, there are four simple steps to follow: <code>stage</code>, <code>commit</code>, <code>pull</code>, and <code>push</code>.</p>
 <p>Not every change is by default included in every commit. To select the changes you wish you commit, you <code>stage</code> them (think “add them to a staging area”). In the <code>Git</code> tab in RStudio, you will see check boxes under the word <code>staged</code>. This allows you to select which changes you are going to commit to your local repo. Having such fine grained control over which files (and even which <em>lines</em> are committed) is certainly handy, but many people typically just stage all changes each commit. If you have many modified files you can easily stage them all by selecting them all using <code>CTRL A</code> then click the checkbox on any one of the files.</p>
 <p><img src="images/Git17.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p>Now that you have <code>staged</code> your changes, we are going to <code>commit</code> to the local repo.</p>
@@ -198,9 +198,7 @@ A: An RStudio project file is a file that sits in the root directory, with the e
 <blockquote>
 <p>Note: all .git repos are initialized first in GitHub, the cloud version is the primary copy, referred to as the <code>origin</code>.</p>
 </blockquote>
-<p>If you only ever work from one computer, it’s unlikely that the origin repo on GitHub will be ahead of your local repo. But if you are collaborating or if you work from multiple computers, making sure you regularly <code>pull</code> before <code>push</code> will help avoid conflicts in the code, so it’s good practice to get into.
-&gt;
-Once you’ve committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can <code>push</code> these changes to GitHub.</p>
+<p>If you only ever work from one computer, it’s unlikely that the origin repo on GitHub will be ahead of your local repo. But if you are collaborating or if you work from multiple computers, making sure you regularly <code>pull</code> before <code>push</code> will help avoid conflicts in the code, so it’s good practice to get into. Once you’ve committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can <code>push</code> these changes to GitHub.</p>
 <p><img src="images/Git20.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p>Now the local and GitHub clones of this repo are in sync.</p>
 </div>
