@@ -7,7 +7,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
 
 ``` 
 
-You have chose to download and setup Github Desktop. This is a great option if you are not actively coding, but have existing R script you want to move in bulk to GitHub. 
+You have chosen to download and setup Github Desktop. This is a great option if you are not actively coding, but have existing R script you want to move in bulk to GitHub. 
 
 ## Step 1: Download {#Desk3.1}
 
@@ -45,7 +45,8 @@ You will notice a few option here when setting up your new repo.
 
 `Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). 
 
-> Recall: all .git repos that are backup on the cloud are initilized from Github. This is refered to the `origin` repo. 
+> Note: By creating the repo first in GitHub, and then cloning the repo to your computer, the repo on GitHub is the primary copy, referred to as the `origin`.
+ 
 
 ## Step 3: Set up Desktop {#Desk3.3}
 
@@ -70,7 +71,7 @@ knitr::include_graphics("images/Git7.PNG")
 
 ## Step 4: Copy files into your local .git repo {#Desk3.4}
 
-You now have a .git repo on your computer. Now you are going to copy over your `.txt` `.R` or `.RMD` files as well as folders that contain any other important "stuff" (e.g., inputs, outputs, documents, ect). This is just like any other folder on your computer, except that any changes that occur inside the folder are tracked by .git and can be backup on GitHub. 
+You now have a .git repo on your computer. Now you are going to copy over your `.txt` `.R` or `.RMD` files as well as folders that contain any other important "stuff" (e.g., inputs, outputs, documents, ect). This is just like any other folder on your computer, except that any changes that occur inside the folder are tracked by .git and can be backed up on GitHub. 
 
 Here is an example using an "old code.txt" file and a folder named "stuff inside a folder in my repo". 
 
@@ -108,14 +109,13 @@ knitr::include_graphics("images/Git10.PNG")
 
 Now, click the blue button `Commit to main` to commit to your main, or primary, branch. 
 
-> Recall: .git will not remeber any changes unless you create a `commit`
+> Recall: .git will not remember any changes unless you create a `commit`
 
 ## Step 5: Upload to GitHub {#Desk3.5}
 
-Once you’ve committed to your local repo you can `push` these changes to GitHub. You should see another conveniently placed blue button labeled `push origin`. Once again, git’s grammatical shortcuts can create confusion; think of this as “push to origin”, origin being your primary repo (aka the one on GitHub).
+Once you’ve committed to your local repo you can `push` these changes to GitHub. You should see another conveniently placed blue button labeled `push origin`. Once again, git’s grammatical shortcuts can create confusion; think of this as “push to origin”, origin being the primary copy of this repo (aka the one on GitHub).
 
-Now your files you tracked by .git and uploaded to GitHub. 
+> Normally you would ensure that you always `pull` before `pushing` so that any newer changes on the GitHub copy of the repo are compared and incorporated. GitHub has a handy feature where it regularly checks for updates on the GitHub repo and will prompt you to `pull` when needed.****
 
-> Note: all .git repos are initilized first in GitHub, the cloud version is the primary copy, referred to as the `origin`. 
+Now your files are tracked by Git and the copies of this repo on your computer and GitHub are in sync.
 
- 

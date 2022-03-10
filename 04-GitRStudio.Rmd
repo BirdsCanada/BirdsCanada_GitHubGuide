@@ -27,7 +27,7 @@ knitr::include_graphics("images/Git5a.PNG")
 
 You will notice a few option here when setting up your new repo. 
 
-- Repository name (required): Think short but concise.No spaces permitted. Also, each repo must have a unique name. 
+- Repository name (required): Think short but concise. No spaces permitted. Also, each repo must have a unique name. 
 
 - Public or Private repo: if you create a public repo, anyone on Github can see your work and seamless collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.  
 
@@ -35,11 +35,11 @@ You will notice a few option here when setting up your new repo.
 
 `README` file can be used to add a short description of your project. 
 
-`.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell .git which files types to ignore in the repo (i.e. they won't be backed up on the GitHub cloud storage). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file. Example: you may want to add `.csv` to exclude raw data files. 
+`.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell .git which files types to ignore in the repo (i.e. they won't be tracked or synced by Git). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file. 
 
 `Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). 
 
-> Recall: all .git repos that are backup on the cloud are initilized from Github. This is refered to the `origin` repo. 
+> Recall: all .git repos that are backup on the cloud are initialized from Github. This is referred to the `origin` repo. 
 
 ## Step 3: Configure RStudio {#RStud4.3}
 
@@ -72,31 +72,33 @@ Then open RStudio and select `New Project` from the File menu, and then select `
 
 > Note: don’t choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.
 
+>Also note: a .git repo can only be created (aka initialized) in an empty folder. So if you are giving this repo the exact same name as the folder on your computer, and want to store it in the exact same place on your computer, you’ll need to rename your local folder first. Example: “My Project BACKUP”.
+
 ```{r image18, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git14.PNG")
 ```
 
 You have just created a `clone` of the `origin` repo onto your local computer to be tracked by .git. 
 
-Now all of your interactions between .git and GitHub can happen through RStudio using the new `Git` tab, that will likely live alongside you Environments/History/File/Plots, ect. The exact location will depend on how you have your RStudio configured. 
+Now all of your interactions between .git and GitHub can happen through RStudio using the new `Git` tab, that will likely live alongside your Environments/History/File/Plots, ect. The exact location will depend on how you have your RStudio configured. 
 
 ```{r image19, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git15.PNG")
 ```
 
-## Step 5: Stage, committ and push {#RStud4.5}
+## Step 5: Stage, commit and push {#RStud4.5}
 
 Now you are ready to start interacting with GitHub from RStudio. 
 
-Here are some very basic instructions to get you started: as you are going about your regular coding business working in an `R Project`, the .git extension will be keeping track of the changes you make to the files in this repo. To move these changes from your local repo back to the `origin` on the cloud, there are three simple steps to follow: `stage`, `committ`, and `push`.
+Here are some very basic instructions to get you started: as you are going about your regular coding business working in an `R Project`, the Git will be keeping track of the changes you make to the files in this repo. To move these changes from your local repo back to the `origin` on the cloud, there are four simple steps to follow: `stage`, `commit`, `pull`, and `push`.
 
-From the `Git` tab in RStudio, you will see check boxes under the word `staged`. This allows you to select which changes you are going to move to the GitHub `origin` repo.
+Not every change is by default included in every commit. To select the changes you wish you commit, you `stage` them (think "add them to a staging area"). In the `Git` tab in RStudio, you will see check boxes under the word `staged`. This allows you to select which changes you are going to commit to your local repo. Having such fine grained control over which files (and even which *lines* are committed) is certainly handy, but many people typically just stage all changes each commit. If you have many modified files you can easily stage them all by selecting them all using `CTRL A` then click the checkbox on any one of the files.
 
 ```{r image20, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git17.PNG")
 ```
 
-Now that you have `staged` your changes, we are going to select  `committ`. 
+Now that you have `staged` your changes, we are going to `commit` to the local repo. 
 
 ```{r image21, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git18.PNG")
@@ -124,19 +126,20 @@ Really if we were being grammatically correct, we would probably refer to it as 
 knitr::include_graphics("images/Git19.PNG")
 ```
 
-Once you’ve committed to your local repo you can `push` these changes to GitHub. 
+> Note: all .git repos are initialized first in GitHub, the cloud version is the primary copy, referred to as the `origin`. 
+
+If you only ever work from one computer, it's unlikely that the origin repo on GitHub will be ahead of your local repo. But if you are collaborating or if you work from multiple computers, making sure you regularly `pull` before `push` will help avoid conflicts in the code, so it's good practice to get into.
+> 
+Once you’ve committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can `push` these changes to GitHub. 
 
 ```{r image23, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git20.PNG")
 ```
 
-
-Now your files you tracked by .git and uploaded to GitHub. 
-
-> Note: all .git repos are initilized first in GitHub, the cloud version is the primary copy, referred to as the `origin`. 
+Now the local and GitHub clones of this repo are in sync.
 
 
-## Step 6: Link RStudio to exisiting local .git repo {#RStud4.6}
+## Step 6: Link RStudio to existing local .git repo {#RStud4.6}
 
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
