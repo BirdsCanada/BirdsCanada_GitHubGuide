@@ -1,4 +1,4 @@
-# Working with Git in RStudio {#RStud4}
+# Setup Git in RStudio {#RStud4}
 
 ```{r tidyr4, echo = FALSE, message = FALSE, warning = FALSE}
 
@@ -69,7 +69,7 @@ Now you will initialize your local .git repo directly from RStudio. To achieve t
 knitr::include_graphics("images/Git13.PNG")
 ```
 
-Then open RStudio and select `New Project` from the File menu, and then select `Version Control` \> `Git`. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo.
+Then open RStudio and select `New Project` from the File menu, and then select `Version Control` -> `Git`. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo.
 
 > Note: don't choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.
 
@@ -144,3 +144,4 @@ If you have a .git repo on your computer that you created with GitHub Desktop, f
 ```{r image24, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git16.PNG")
 ```
+
