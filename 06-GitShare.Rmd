@@ -1,0 +1,65 @@
+# Sharing GitHub Scripts {#Share6}
+
+```{r tidyr6, echo = FALSE, message = FALSE, warning = FALSE}
+
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
+
+```
+
+## Contriuting Code with RStudio
+
+The idea of contributing code to someone else repo can seem daunting at first. Lets keep it simple! Follow this general workflow to get started:
+
+- First, you will want to `Fork` the target repo to your own account. Navigate to your collaborators GitHub page (e.g., [Birds Canada](https://github.com/BirdsCanada)), select the repo you want to work on, and use the `Fork` icon in the top right corner. Then select 'Create Fork'.
+
+- Now the repo will appear in your list of Repositories on your personal Github page. You can clone the repo to your local machine using the instructions previously provided for [RStudio](#RStud4.4). 
+
+- Check out a new `branch` and make changes.
+
+- Push your topic branch to your fork.
+
+- Use the diff viewer on GitHub to create a pull request via a discussion.
+
+- Make any requested changes.
+
+- The pull request is then merged (usually into the master branch) and the topic branch is deleted from the upstream (target) repo.
+
+
+
+##Transfering ownership to Birds Canada{#Share6.1}
+
+Once your code is fully developed and tested, it can be transferred to Birds Canada's Github account for future management. 
+
+Why would you want to transfer ownership? 
+
+By transferring the repository to Birds Canada, its content, issues, pull request, ect., can be administer without the need for your input moving forward. If you are a contractor, this makes sense since you may or many not be involved with future script development. If you are a regular employee, your scripts will be more accessible to other staff for collaborative development, and will ensure they are not lost if you choose to leave the organization. 
+
+**You can still contribute to the scripts once transferred, and you will still be given credit for the authorship (or co-authorship) of scripts you contributed to writing.** 
+
+Prerequisites for repository transfers:
+
+-   When you transfer a repository that you own to another user account, the new owner will receive a confirmation email. The confirmation email includes instructions for accepting the transfer. If the new owner doesn't accept the transfer within one day, the invitation will expire.
+
+-   To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.
+
+-   The target account must not have a repository with the same name, or a fork in the same network.
+
+-   The original owner of the repository is added as a collaborator on the transferred repository. Other collaborators to the transferred repository remain intact.
+
+-   Private forks can't be transferred.
+
+
+Step-by-Step: 
+
+1. On your GitHub account online, navigate to the main page of the repository.
+
+2. Under your repository name, click Settings.
+
+3. Under "Danger Zone", click Transfer. 
+
+4. Read the information about transferring a repository, then type the name of the user or organization you'd like to transfer ownership of the repository to.
+
+5. Read the warnings about potential loss of features depending on the new owner's subscription. 
+
+6. Type the name of the repository you'd like to transfer, then click I understand, transfer this repository. 
