@@ -4,11 +4,11 @@
 
 Now that you have a GitHub account and are set up on GitHub Desktop or RStudio, we will bestow upon you some additional best practices.
 
-## 1: Use a unique repository for each project {#Best5.1}
+## Use a unique repository for each project {#Best5.1}
 
 You can host multiple projects on GitHub at the same time but it would be a mistake to use one repository to store information about multiple projects. Make sure you maintain a unique repository for each project. Like folders on your computer, this will keep your code organized and your brain happy.
 
-## 2: Use branches to avoid heartache {#Best5.2}
+## Use branches to avoid heartache {#Best5.2}
 
 A `branch` is a way to develop scripts (e.g., a new feature or modification) alongside functions scripts, while not affecting the original (i.e., the main or default branch). It is good practice to work on short-lived branches.If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on Github. But once you have a functional amount of code, or are collaborating on code development, you will want to create a `branch` so that you are not risking breaking what is already working!
 
@@ -40,7 +40,7 @@ In order to remain popular with your peers, keep these consideration in mind whe
 
 -   Branches should be short-lived
 
-## 3: Create a meaningful .gitignore file {#Best5.3}
+## Create a meaningful .gitignore file {#Best5.3}
 
 .gitignore files are plain text files that instruct the program on predefined files that should be ignored.
 
@@ -52,17 +52,17 @@ For example:
 
 .pfd .csv .xlsx
 
-## 4: Define the code owner {#Best5.4}
+## Define the code owner {#Best5.4}
 
 It is important that you give yourself credit for the code you create, and likewise give others credit for the code they created. If you borrow or modified code from another source, this is OK! Just make sure you give credit where credit is due. Similarly, if you are collaborating on code development, define the roles of each author. This can be done at the front end of your scripts and interspersed within the script.
 
 GitHub has a built-in code owners feature that allows you to grant access to a particular group of staff or partners. Only verified code owners will be able to edit or review the project. The code owner feature can be used for more than assigning individuals to work on the repository. It can automatically assign teams and grant them permission to work on the project and maintain the repository. Birds Canada will be using the team and code owner feature to manage scripts that are shared. See Chapter 5.
 
-## 5: Don't let your password leak into your code {#Best5.5}
+## Don't let your password leak into your code {#Best5.5}
 
 While it seems obvious that you should not share your password, you might accidentally save this in your source code and `commit` it to Github. For example, when downloading data from NatureCounts using the R package, you might be inclined to save your username and password in your source code. Ensure this isn't the case before you `commit`!
 
-## 6: Don't commit an crime {#Best5.6}
+## Don't commit an crime {#Best5.6}
 
 Make small commits and make them often. Each commit should reflect changes that are easily accompanied by a single and informative commit message. For example:
 

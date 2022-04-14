@@ -170,12 +170,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5" data-path="Best5.html"><a href="Best5.html"><i class="fa fa-check"></i><b>5</b> GitHub Best Practices</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="Best5.html"><a href="Best5.html#Best5.1"><i class="fa fa-check"></i><b>5.1</b> 1: Use a unique repository for each project</a></li>
-<li class="chapter" data-level="5.2" data-path="Best5.html"><a href="Best5.html#Best5.2"><i class="fa fa-check"></i><b>5.2</b> 2: Use branches to avoid heartache</a></li>
-<li class="chapter" data-level="5.3" data-path="Best5.html"><a href="Best5.html#Best5.3"><i class="fa fa-check"></i><b>5.3</b> 3: Create a meaningful .gitignore file</a></li>
-<li class="chapter" data-level="5.4" data-path="Best5.html"><a href="Best5.html#Best5.4"><i class="fa fa-check"></i><b>5.4</b> 4: Define the code owner</a></li>
-<li class="chapter" data-level="5.5" data-path="Best5.html"><a href="Best5.html#Best5.5"><i class="fa fa-check"></i><b>5.5</b> 5: Don’t let your password leak into your code</a></li>
-<li class="chapter" data-level="5.6" data-path="Best5.html"><a href="Best5.html#Best5.6"><i class="fa fa-check"></i><b>5.6</b> 6: Don’t commit an crime</a></li>
+<li class="chapter" data-level="5.1" data-path="Best5.html"><a href="Best5.html#Best5.1"><i class="fa fa-check"></i><b>5.1</b> Use a unique repository for each project</a></li>
+<li class="chapter" data-level="5.2" data-path="Best5.html"><a href="Best5.html#Best5.2"><i class="fa fa-check"></i><b>5.2</b> Use branches to avoid heartache</a></li>
+<li class="chapter" data-level="5.3" data-path="Best5.html"><a href="Best5.html#Best5.3"><i class="fa fa-check"></i><b>5.3</b> Create a meaningful .gitignore file</a></li>
+<li class="chapter" data-level="5.4" data-path="Best5.html"><a href="Best5.html#Best5.4"><i class="fa fa-check"></i><b>5.4</b> Define the code owner</a></li>
+<li class="chapter" data-level="5.5" data-path="Best5.html"><a href="Best5.html#Best5.5"><i class="fa fa-check"></i><b>5.5</b> Don’t let your password leak into your code</a></li>
+<li class="chapter" data-level="5.6" data-path="Best5.html"><a href="Best5.html#Best5.6"><i class="fa fa-check"></i><b>5.6</b> Don’t commit an crime</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="Share6.html"><a href="Share6.html"><i class="fa fa-check"></i><b>6</b> Sharing GitHub Scripts</a>
 <ul>
@@ -215,11 +215,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 5</span> GitHub Best Practices</h1>
 <p>Now that you have a GitHub account and are set up on GitHub Desktop or RStudio, we will bestow upon you some additional best practices.</p>
 <div id="Best5.1" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> 1: Use a unique repository for each project</h2>
+<h2><span class="header-section-number">5.1</span> Use a unique repository for each project</h2>
 <p>You can host multiple projects on GitHub at the same time but it would be a mistake to use one repository to store information about multiple projects. Make sure you maintain a unique repository for each project. Like folders on your computer, this will keep your code organized and your brain happy.</p>
 </div>
 <div id="Best5.2" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> 2: Use branches to avoid heartache</h2>
+<h2><span class="header-section-number">5.2</span> Use branches to avoid heartache</h2>
 <p>A <code>branch</code> is a way to develop scripts (e.g., a new feature or modification) alongside functions scripts, while not affecting the original (i.e., the main or default branch). It is good practice to work on short-lived branches.If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on Github. But once you have a functional amount of code, or are collaborating on code development, you will want to create a <code>branch</code> so that you are not risking breaking what is already working!</p>
 <ul>
 <li>Create a branch: This is the first step in the process, you create a new branch for the development using the symbol (next to the current branch name).</li>
@@ -245,7 +245,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="Best5.3" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> 3: Create a meaningful .gitignore file</h2>
+<h2><span class="header-section-number">5.3</span> Create a meaningful .gitignore file</h2>
 <p>.gitignore files are plain text files that instruct the program on predefined files that should be ignored.</p>
 <p>Specifically, Github has a file size limit. It is therefore best suited to storing your R scripts and other related files (e.g., ReadMe), <strong>but not raw data and large output files</strong>. These files should be save elsewhere on your computer and <em>backed up</em> on your cloud storage.</p>
 <p>Recall that during the creation of your first <code>repo</code> we selected the R .gitignore file template, which will be saved in your root folder. You can open this file in RStudio and add or remove any file types.</p>
@@ -253,16 +253,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>.pfd .csv .xlsx</p>
 </div>
 <div id="Best5.4" class="section level2" number="5.4">
-<h2><span class="header-section-number">5.4</span> 4: Define the code owner</h2>
+<h2><span class="header-section-number">5.4</span> Define the code owner</h2>
 <p>It is important that you give yourself credit for the code you create, and likewise give others credit for the code they created. If you borrow or modified code from another source, this is OK! Just make sure you give credit where credit is due. Similarly, if you are collaborating on code development, define the roles of each author. This can be done at the front end of your scripts and interspersed within the script.</p>
 <p>GitHub has a built-in code owners feature that allows you to grant access to a particular group of staff or partners. Only verified code owners will be able to edit or review the project. The code owner feature can be used for more than assigning individuals to work on the repository. It can automatically assign teams and grant them permission to work on the project and maintain the repository. Birds Canada will be using the team and code owner feature to manage scripts that are shared. See Chapter 5.</p>
 </div>
 <div id="Best5.5" class="section level2" number="5.5">
-<h2><span class="header-section-number">5.5</span> 5: Don’t let your password leak into your code</h2>
+<h2><span class="header-section-number">5.5</span> Don’t let your password leak into your code</h2>
 <p>While it seems obvious that you should not share your password, you might accidentally save this in your source code and <code>commit</code> it to Github. For example, when downloading data from NatureCounts using the R package, you might be inclined to save your username and password in your source code. Ensure this isn’t the case before you <code>commit</code>!</p>
 </div>
 <div id="Best5.6" class="section level2" number="5.6">
-<h2><span class="header-section-number">5.6</span> 6: Don’t commit an crime</h2>
+<h2><span class="header-section-number">5.6</span> Don’t commit an crime</h2>
 <p>Make small commits and make them often. Each commit should reflect changes that are easily accompanied by a single and informative commit message. For example:</p>
 <blockquote>
 <p>Change made to analysis model fit code</p>
