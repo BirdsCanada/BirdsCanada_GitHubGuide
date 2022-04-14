@@ -14,7 +14,7 @@ cover-image: BirdsCan.PNG
 
 # {-}
 
-<img src="images/BirdsCan.PNG" width="700px" style="display: block; margin: auto;" />
+<img src="images/index.PNG" width="700px" style="display: block; margin: auto;" />
 
 
 

@@ -1,4 +1,4 @@
-# Working with Git in RStudio {#RStud4}
+# Setup Git in RStudio {#RStud4}
 
 
 
@@ -54,7 +54,7 @@ Now you will initialize your local .git repo directly from RStudio. To achieve t
 
 <img src="images/Git13.PNG" width="700px" style="display: block; margin: auto;" />
 
-Then open RStudio and select `New Project` from the File menu, and then select `Version Control` \> `Git`. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo.
+Then open RStudio and select `New Project` from the File menu, and then select `Version Control` -> `Git`. Now paste the URL you just copied from GitHub, and provide a local folder to store the repo.
 
 > Note: don't choose a folder inside another cloud storage folder (e.g. OneDrive, Dropbox, Google Drive) for your local .git folders, as this can cause issues.
 
@@ -115,3 +115,4 @@ Now the local and GitHub clones of this repo are in sync.
 If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
 
 <img src="images/Git16.PNG" width="700px" style="display: block; margin: auto;" />
+

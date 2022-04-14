@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | GitHub: A Beginners Guide</title>
+  <title>Chapter 6 Sharing GitHub Scripts | GitHub: A Beginners Guide</title>
   <meta name="description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta property="og:title" content="Chapter 6 Sharing GitHub Scripts | GitHub: A Beginners Guide" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git" />
   <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/BirdsCan.PNG" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="DMEthier/BirdsCanada_GitHubGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta name="twitter:title" content="Chapter 6 Sharing GitHub Scripts | GitHub: A Beginners Guide" />
   
   <meta name="twitter:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="twitter:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/BirdsCan.PNG" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="Git2.html"/>
+<link rel="prev" href="Best5.html"/>
+<link rel="next" href="Resource7.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -147,26 +147,61 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Intro1" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>You are here because creating reproducible and accessible R code is important to your job with <a href="https://www.birdscanada.org/">Birds Canada</a> and ultimately to bird conservation.</p>
-<p>The goal of this guidebook is to give you (analytically savvy staff/ contractors/ partners) the tools needed to develop reproducible R code and step-by-step instructions on how to archive your old code or share your existing code and relevant documents in <a href="https://github.com/">GitHub</a>. Later chapters of this book will discuss working collaboratively using Git version control and GitHub. But do not fret, we will start with the basics first.</p>
-<p>While some of the instructions in this book are general guidelines/ best practices, others are mandatory for staff and contractors to ensure analytical scripts are properly stored and accessible for future use.</p>
-<div id="intro1.1" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Why is this Important?</h2>
-<p>Someone unfamiliar with your project should be able to look at your R code, data files, and outputs and understand in detail what you did and why. This <em>someone</em> will very likely be your future self! We very often discover flaws in our initial preparation of the data, get access to new data, or decide that the parameterization of a particular model was not correct. This means that the analysis you did last week/ month/ year will probably need to be redone. If you have organized and documented your work clearly, then repeating the analysis will be much, much easier.</p>
-<p>Staff turnover is also a reality in all organizations. If you leave Birds Canada for greener pastures, your colleague/ replacements will also need to know where to find your scripts, files, and outputs. This will better ensure knowledge is not lost and time is not wasted recreating your workflows.</p>
-<p>Last, it is increasing required by funders, partners, and publishers that data and analytical script be made available, such that the <em>FAIR</em> principal of data management and stewardship are followed: Findability, Accessibility, Interoperability, and Reusability of digital assets. This is also a priority for Birds Canada as we strive to make our work more open and transparent.</p>
+<div id="Share6" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Sharing GitHub Scripts</h1>
+<p>Now that you have mastered the basics of working with .git and Github using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else’s scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longtern storage and management.</p>
+<div id="Share6.1" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Contributing code with RStudio</h2>
+<p>The idea of contributing code to someones repo can seem daunting at first. Let’s keep it simple to start.</p>
+<ul>
+<li>First, you will want to <code>Fork</code> the target repo to your own account. Navigate to your collaborators GitHub page (e.g., <a href="https://github.com/BirdsCanada">Birds Canada</a>), select the repo you want to work on, and use the <code>Fork</code> icon in the top right corner. Then select ‘Create Fork’.</li>
+</ul>
+<p><img src="images/GitFork.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>Now the repo will appear in your list of Repositories on your personal Github page. You can clone the repo to your local machine using the instructions previously provided for <a href="RStud4.html#RStud4.4">RStudio</a>.</p></li>
+<li><p>Check out a new <code>branch</code> using the instructions previously provided in <a href="Best5.html#Best5.2">Use branches to avoid heartache</a>. This will make a branch of your forked repo.</p></li>
+<li><p>You will create a <code>pull request</code> when you are finished contributing to the branch. The difference now is that the repo owner will need to <code>Compare &amp; Pull request</code> on their Github account. This given them a chance to review your changes before merging them with the main branch.</p></li>
+</ul>
+<p>Those are the basics to get you started.</p>
 </div>
-<div id="intro1.2" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Prerequisites</h2>
-<p>This book assumes that you have a basic understanding of R and RStudio. Regardless of whether you are new to R or not, we highly recommend that you become familiar with <a href="http://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. Their book covers how to import, visualize, and summarize data in R using the <a href="https://www.tidyverse.org/">tidyverse</a> collection of R packages . It also provides an invaluable framework for organizing your <a href="http://r4ds.had.co.nz/workflow-projects.html">workflow</a> to create clean, reproducible code.</p>
+<div id="Share6.2" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Transferring ownership</h2>
+<p>Once your code is fully developed and tested, it can be transferred to Birds Canada’s Github account for future management.</p>
+<p>Why would you want to transfer ownership?</p>
+<p>By transferring the repository to Birds Canada, its content, issues, pull request, ect., can be administer without the need for your input moving forward. If you are a contractor, this makes sense since you may or many not be involved with future script development. If you are a regular employee, your scripts will be more accessible to other staff for collaborative development, and will ensure they are not lost if you choose to leave the organization.</p>
+<p><strong>You can still contribute to the scripts once transferred, and you will still be given credit for authorship (or co-authorship)</strong></p>
+<div id="Share6.2.1" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Prerequisites for repository transfers</h3>
+<ul>
+<li><p>When you transfer a repository that you own to another user account, the new owner will receive a confirmation email. The confirmation email includes instructions for accepting the transfer. If the new owner doesn’t accept the transfer within one day, the invitation will expire.</p></li>
+<li><p>To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.</p></li>
+</ul>
+<blockquote>
+<p>If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know: <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a></p>
+</blockquote>
+<ul>
+<li><p>The target account must not have a repository with the same name, or a fork in the same network.</p></li>
+<li><p>The original owner of the repository is added as a collaborator on the transferred repository. Other collaborators to the transferred repository remain intact.</p></li>
+<li><p>Private forks can’t be transferred.</p></li>
+</ul>
 </div>
-<div id="intro1.3" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Acknowledgements</h2>
-<p>Funding for this initiative was provided by …</p>
-<p>This R book will be updated as needed. If you have any comments or feedback, please submit them to <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a>.</p>
+<div id="Share6.2.2" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Step-by-Step</h3>
+<ol style="list-style-type: decimal">
+<li><p>On your GitHub account online, navigate to the main page of the repository you wish to transfer.</p></li>
+<li><p>Under your repository name, click Settings.</p></li>
+</ol>
+<p><img src="images/GitSettings.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Under “Danger Zone”, click Transfer.</li>
+</ol>
+<p><img src="images/GitTransfer.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Read the information about transferring a repository, then type the name of the user or organization you’d like to transfer ownership of the repository to: <em>BirdsCanada</em>. You will be promoted to enter your Github password to complete the transfer.</p></li>
+<li><p>If you are part of the Birds Canada staff ‘Team’ on Github, you can click this box to allow other staff to access your scripts.</p></li>
+</ol>
 
+</div>
 </div>
 </div>
             </section>
@@ -174,8 +209,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Git2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="Best5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Resource7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

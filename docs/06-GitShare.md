@@ -1,11 +1,6 @@
 # Sharing GitHub Scripts {#Share6}
 
-```{r tidyr6, echo = FALSE, message = FALSE, warning = FALSE}
 
-library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
-
-```
 
 Now that you have mastered the basics of working with .git and Github using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else's scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longtern storage and management.
 
@@ -15,9 +10,7 @@ The idea of contributing code to someones repo can seem daunting at first. Let's
 
 -   First, you will want to `Fork` the target repo to your own account. Navigate to your collaborators GitHub page (e.g., [Birds Canada](https://github.com/BirdsCanada)), select the repo you want to work on, and use the `Fork` icon in the top right corner. Then select 'Create Fork'.
 
-```{r imagefork, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/GitFork.PNG")
-```
+<img src="images/GitFork.PNG" width="700px" style="display: block; margin: auto;" />
 
 -   Now the repo will appear in your list of Repositories on your personal Github page. You can clone the repo to your local machine using the instructions previously provided for [RStudio](#RStud4.4).
 
@@ -57,15 +50,11 @@ By transferring the repository to Birds Canada, its content, issues, pull reques
 
 2.  Under your repository name, click Settings.
 
-```{r imageset, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/GitSettings.PNG")
-```
+<img src="images/GitSettings.PNG" width="700px" style="display: block; margin: auto;" />
 
 3.  Under "Danger Zone", click Transfer.
 
-```{r imagetrans, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/GitTransfer.PNG")
-```
+<img src="images/GitTransfer.PNG" width="700px" style="display: block; margin: auto;" />
 
 4.  Read the information about transferring a repository, then type the name of the user or organization you'd like to transfer ownership of the repository to: *BirdsCanada*. You will be promoted to enter your Github password to complete the transfer.
 

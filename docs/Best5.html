@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | GitHub: A Beginners Guide</title>
+  <title>Chapter 5 GitHub Best Practices | GitHub: A Beginners Guide</title>
   <meta name="description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta property="og:title" content="Chapter 5 GitHub Best Practices | GitHub: A Beginners Guide" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git" />
   <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/BirdsCan.PNG" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="DMEthier/BirdsCanada_GitHubGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta name="twitter:title" content="Chapter 5 GitHub Best Practices | GitHub: A Beginners Guide" />
   
   <meta name="twitter:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="twitter:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/BirdsCan.PNG" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="Git2.html"/>
+<link rel="prev" href="RStud4.html"/>
+<link rel="next" href="Share6.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -147,25 +147,67 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Intro1" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>You are here because creating reproducible and accessible R code is important to your job with <a href="https://www.birdscanada.org/">Birds Canada</a> and ultimately to bird conservation.</p>
-<p>The goal of this guidebook is to give you (analytically savvy staff/ contractors/ partners) the tools needed to develop reproducible R code and step-by-step instructions on how to archive your old code or share your existing code and relevant documents in <a href="https://github.com/">GitHub</a>. Later chapters of this book will discuss working collaboratively using Git version control and GitHub. But do not fret, we will start with the basics first.</p>
-<p>While some of the instructions in this book are general guidelines/ best practices, others are mandatory for staff and contractors to ensure analytical scripts are properly stored and accessible for future use.</p>
-<div id="intro1.1" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Why is this Important?</h2>
-<p>Someone unfamiliar with your project should be able to look at your R code, data files, and outputs and understand in detail what you did and why. This <em>someone</em> will very likely be your future self! We very often discover flaws in our initial preparation of the data, get access to new data, or decide that the parameterization of a particular model was not correct. This means that the analysis you did last week/ month/ year will probably need to be redone. If you have organized and documented your work clearly, then repeating the analysis will be much, much easier.</p>
-<p>Staff turnover is also a reality in all organizations. If you leave Birds Canada for greener pastures, your colleague/ replacements will also need to know where to find your scripts, files, and outputs. This will better ensure knowledge is not lost and time is not wasted recreating your workflows.</p>
-<p>Last, it is increasing required by funders, partners, and publishers that data and analytical script be made available, such that the <em>FAIR</em> principal of data management and stewardship are followed: Findability, Accessibility, Interoperability, and Reusability of digital assets. This is also a priority for Birds Canada as we strive to make our work more open and transparent.</p>
+<div id="Best5" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> GitHub Best Practices</h1>
+<p>Now that you have a GitHub account and are set up on GitHub Desktop or RStudio, we will bestow upon you some additional best practices.</p>
+<div id="Best5.1" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> 1: Use a unique repository for each project</h2>
+<p>You can host multiple projects on GitHub at the same time but it would be a mistake to use one repository to store information about multiple projects. Make sure you maintain a unique repository for each project. Like folders on your computer, this will keep your code organized and your brain happy.</p>
 </div>
-<div id="intro1.2" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Prerequisites</h2>
-<p>This book assumes that you have a basic understanding of R and RStudio. Regardless of whether you are new to R or not, we highly recommend that you become familiar with <a href="http://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. Their book covers how to import, visualize, and summarize data in R using the <a href="https://www.tidyverse.org/">tidyverse</a> collection of R packages . It also provides an invaluable framework for organizing your <a href="http://r4ds.had.co.nz/workflow-projects.html">workflow</a> to create clean, reproducible code.</p>
+<div id="Best5.2" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> 2: Use branches to avoid heartache</h2>
+<p>A <code>branch</code> is a way to develop scripts (e.g., a new feature or modification) alongside functions scripts, while not affecting the original (i.e., the main or default branch). It is good practice to work on short-lived branches.If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on Github. But once you have a functional amount of code, or are collaborating on code development, you will want to create a <code>branch</code> so that you are not risking breaking what is already working!</p>
+<ul>
+<li>Create a branch: This is the first step in the process, you create a new branch for the development using the symbol (next to the current branch name).</li>
+</ul>
+<p><img src="images/GitBranch.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>Name your branch: give your branch a meaningful names that is all lower case with no spaces. Then check the box <code>Sync branch with remote</code> and then <code>Create</code>. This is now called the feature or topic branch.</p></li>
+<li><p>Create changes: now make the edits was want to you script within the branch.</p></li>
+<li><p>Merge a branch: Once you’re satisfied with your work, you can open a pull request to merge the changes with the main branch. Click <code>push</code> to make the request. Not navigate to your Github repository (online) and create a <code>pull request</code></p></li>
+</ul>
+<p>Github will suggest you <code>Compare &amp; Pull request</code> (look for the yellow box). The <code>pull request</code> aims to insert the adaptations in your branch to the main branch.If you are working on your own repo you can merge the <code>pull requests</code> yourself.</p>
+<ul>
+<li>Delete branch: once complete, you can delete the old branch. Github will prompt you to do this.</li>
+</ul>
+<p>In order to remain popular with your peers, keep these consideration in mind when working with branches:</p>
+<ul>
+<li><p>Never merge locally to your machine. Always merge branches online by making a <code>pull request</code>.</p></li>
+<li><p>Always <code>commit</code> into a feature/ topic branch, never to the master branch.</p></li>
+<li><p>Always start a new branches from the main branch.</p></li>
+<li><p>Only work on your own branches.</p></li>
+<li><p>Never merge someone else’s pull request without their consent.</p></li>
+<li><p>Branches should be short-lived</p></li>
+</ul>
 </div>
-<div id="intro1.3" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Acknowledgements</h2>
-<p>Funding for this initiative was provided by …</p>
-<p>This R book will be updated as needed. If you have any comments or feedback, please submit them to <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a>.</p>
+<div id="Best5.3" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> 3: Create a meaningful .gitignore file</h2>
+<p>.gitignore files are plain text files that instruct the program on predefined files that should be ignored.</p>
+<p>Specifically, Github has a file size limit. It is therefore best suited to storing your R scripts and other related files (e.g., ReadMe), <strong>but not raw data and large output files</strong>. These files should be save elsewhere on your computer and <em>backed up</em> on your cloud storage.</p>
+<p>Recall that during the creation of your first <code>repo</code> we selected the R .gitignore file template, which will be saved in your root folder. You can open this file in RStudio and add or remove any file types.</p>
+<p>For example:</p>
+<p>.pfd .csv .xlsx</p>
+</div>
+<div id="Best5.4" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> 4: Define the code owner</h2>
+<p>It is important that you give yourself credit for the code you create, and likewise give others credit for the code they created. If you borrow or modified code from another source, this is OK! Just make sure you give credit where credit is due. Similarly, if you are collaborating on code development, define the roles of each author. This can be done at the front end of your scripts and interspersed within the script.</p>
+<p>GitHub has a built-in code owners feature that allows you to grant access to a particular group of staff or partners. Only verified code owners will be able to edit or review the project. The code owner feature can be used for more than assigning individuals to work on the repository. It can automatically assign teams and grant them permission to work on the project and maintain the repository. Birds Canada will be using the team and code owner feature to manage scripts that are shared. See Chapter 5.</p>
+</div>
+<div id="Best5.5" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> 5: Don’t let your password leak into your code</h2>
+<p>While it seems obvious that you should not share your password, you might accidentally save this in your source code and <code>commit</code> it to Github. For example, when downloading data from NatureCounts using the R package, you might be inclined to save your username and password in your source code. Ensure this isn’t the case before you <code>commit</code>!</p>
+</div>
+<div id="Best5.6" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> 6: Don’t commit an crime</h2>
+<p>Make small commits and make them often. Each commit should reflect changes that are easily accompanied by a single and informative commit message. For example:</p>
+<blockquote>
+<p>Change made to analysis model fit code</p>
+</blockquote>
+<p>You should try to refrain from making a lot of changes to a lot of sections of your code making a mixed-commit. For example:</p>
+<blockquote>
+<p>Major changes to analysis, data manip, and bookdown yml.</p>
+</blockquote>
+<p>If you need to revert any files, you will be happy up made consistent and well detailed commits.</p>
 
 </div>
 </div>
@@ -174,8 +216,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Git2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="RStud4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Share6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

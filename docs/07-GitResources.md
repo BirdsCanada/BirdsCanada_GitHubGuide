@@ -1,11 +1,6 @@
 # GitHub Resources {#Resource7}
 
-```{r tidyr7, echo = FALSE, message = FALSE, warning = FALSE}
 
-library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
-
-```
 
 There are oodles of Github resources available online. The trick is finding the ones that are not too advanced (i.e., command line). Here we list a handful or resources you may find useful. Please let us know if there are other we should add to the list!
 

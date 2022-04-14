@@ -15,7 +15,7 @@ cover-image: BirdsCan.PNG
 # {-}
 
 ```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/BirdsCan.PNG")
+knitr::include_graphics("images/index.PNG")
 ```
 
 

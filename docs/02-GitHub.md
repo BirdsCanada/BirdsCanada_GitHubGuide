@@ -64,7 +64,7 @@ When working with .git and GitHub, you are going to see the words `repo`, `origi
 
 There are multiple graphical interfaces for using .git and GitHub. This document will provide instructions for two methods: [GitHub Desktop](#Desk3) and [RStudio](#RStud4).
 
-Q: Which option is for you?
+Q: Which option is for you??
 
 A: It depends. GitHub Desktop and RStudio offer different advantages. Which is for you will largely depend on how you plan to use and interact with GitHub.
 

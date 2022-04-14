@@ -1,11 +1,6 @@
 # GitHub Best Practices {#Best5}
 
-```{r tidyr5, echo = FALSE, message = FALSE, warning = FALSE}
 
-library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
-
-```
 
 Now that you have a GitHub account and are set up on GitHub Desktop or RStudio, we will bestow upon you some additional best practices.
 
@@ -19,9 +14,7 @@ A `branch` is a way to develop scripts (e.g., a new feature or modification) alo
 
 -   Create a branch: This is the first step in the process, you create a new branch for the development using the symbol (next to the current branch name).
 
-```{r imagebranch, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/GitBranch.PNG")
-```
+<img src="images/GitBranch.PNG" width="700px" style="display: block; margin: auto;" />
 
 -   Name your branch: give your branch a meaningful names that is all lower case with no spaces. Then check the box `Sync branch with remote` and then `Create`. This is now called the feature or topic branch.
 
