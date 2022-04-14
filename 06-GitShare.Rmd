@@ -94,3 +94,5 @@ usethis::use_git_remote(
   overwrite = TRUE
 )
 ```
+
+Easy! You have now fixed the broken link and can contribute your changes to the new origin. 
