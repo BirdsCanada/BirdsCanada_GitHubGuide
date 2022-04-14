@@ -9,7 +9,7 @@ link-citations: yes
 github-repo: DMEthier/BirdsCanada_GitHubGuide
 url: 'https://github.com/DMEthier/BirdsCanada_GitHubGuide.git'
 description: "Promoting R code sharing and achiving standards within Birds Canada"
-cover-image: BirdsCan.PNG
+cover-image: index.PNG
 ---
 
 # {-}
