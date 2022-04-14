@@ -59,3 +59,40 @@ By transferring the repository to Birds Canada, its content, issues, pull reques
 4.  Read the information about transferring a repository, then type the name of the user or organization you'd like to transfer ownership of the repository to: *BirdsCanada*. You will be promoted to enter your Github password to complete the transfer.
 
 5.  If you are part of the Birds Canada staff 'Team' on Github, you can click this box to allow other staff to access your scripts.
+
+**You have now transferred ownership, but you also broken the connection between the GitHub repo and RStudio. Don't panic! WE can fit this without needing to use the GitBash command line interface**
+
+Here is some sample R code for changing the origin of the repo from your personal GitHub account to Birds Canada.
+
+
+```r
+#load the library
+library (usethis)
+
+#look to see where RStudio is currently looking for the GitHub origin.
+usethis::git_remotes()
+```
+
+```
+## v Setting active project to 'C:/Users/dethier/Documents/ethier-scripts/BirdsCanada_GitHubGuide'
+```
+
+```
+## $origin
+## [1] "https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git"
+```
+
+```r
+#output example
+#"https://github.com/DMEthier/BirdsCanada_GitHubGuide.git"
+
+#Now redirect RStudio the new origin on the Birds Canda GitHub account
+
+usethis::use_git_remote(
+  "origin",
+  "https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git",
+  overwrite = TRUE
+)
+```
+
+Easy! You have now fixed the broken link and can contribute your changes to the new origin. 
