@@ -69,7 +69,7 @@ knitr::include_graphics("images/GitTransfer.PNG")
 
 4.  Read the information about transferring a repository, then type the name of the organization you'd like to transfer ownership to. In this instance you will type `BirdsCanada` (*all one word*), along with the name of the repository. You will be promoted to enter your Github password to complete the transfer.
 
-```{r imagetrans, echo=FALSE, out.width="700px", fig.align='center'}
+```{r imagetrans2, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/GitTransfer2.PNG")
 ```
 
@@ -79,7 +79,7 @@ knitr::include_graphics("images/GitTransfer2.PNG")
 
 Here is some sample R code for changing the origin of the repo from your personal GitHub account to Birds Canada.
 
-```{r script remote, message=FALSE, eval=FLASE}
+```{r script remote, message=FALSE, eval=FALSE}
 
 #load the library
 library (usethis)

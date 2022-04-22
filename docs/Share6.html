@@ -241,7 +241,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.</p></li>
 </ul>
 <blockquote>
-<p>If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know: <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a></p>
+<p><strong>If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know and I will add you: <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a></strong></p>
 </blockquote>
 <ul>
 <li><p>The target account must not have a repository with the same name, or a fork in the same network.</p></li>
@@ -253,37 +253,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">6.2.2</span> Step-by-Step</h3>
 <ol style="list-style-type: decimal">
 <li><p>On your GitHub account online, navigate to the main page of the repository you wish to transfer.</p></li>
-<li><p>Under your repository name, click Settings.</p></li>
+<li><p>Once you have navigate to your repository, click Settings.</p></li>
 </ol>
 <p><img src="images/GitSettings.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
-<li>Under “Danger Zone”, click Transfer.</li>
+<li>Under the General tab, scroll to the very bottom labeled “Danger Zone”. Click on Transfer Ownership.</li>
 </ol>
 <p><img src="images/GitTransfer.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Read the information about transferring a repository, then type the name of the user or organization you’d like to transfer ownership of the repository to: <em>BirdsCanada</em>. You will be promoted to enter your Github password to complete the transfer.</p></li>
-<li><p>If you are part of the Birds Canada staff ‘Team’ on Github, you can click this box to allow other staff to access your scripts.</p></li>
+<li>Read the information about transferring a repository, then type the name of the organization you’d like to transfer ownership to. In this instance you will type <code>BirdsCanada</code> (<em>all one word</em>), along with the name of the repository. You will be promoted to enter your Github password to complete the transfer.</li>
 </ol>
-<p><strong>You have now transferred ownership, but you also broken the connection between the GitHub repo and RStudio. Don’t panic! WE can fit this without needing to use the GitBash command line interface</strong></p>
+<p><img src="images/GitTransfer2.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>If you are part of the Birds Canada staff ‘Team’ on Github, you can click this box to allow other staff to access your scripts.</li>
+</ol>
+<p><strong>You have now transferred ownership, but you also broken the connection between the GitHub repo and RStudio. Don’t panic! We can fit this without needing to use the command line interface.</strong></p>
 <p>Here is some sample R code for changing the origin of the repo from your personal GitHub account to Birds Canada.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="Share6.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load the library</span></span>
 <span id="cb1-2"><a href="Share6.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (usethis)</span>
 <span id="cb1-3"><a href="Share6.html#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="Share6.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#look to see where RStudio is currently looking for the GitHub origin.</span></span>
-<span id="cb1-5"><a href="Share6.html#cb1-5" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_remotes</span>()</span></code></pre></div>
-<pre><code>## v Setting active project to &#39;C:/Users/dethier/Documents/ethier-scripts/BirdsCanada_GitHubGuide&#39;</code></pre>
-<pre><code>## $origin
-## [1] &quot;https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git&quot;</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="Share6.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#output example</span></span>
-<span id="cb4-2"><a href="Share6.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&quot;https://github.com/DMEthier/BirdsCanada_GitHubGuide.git&quot;</span></span>
-<span id="cb4-3"><a href="Share6.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="Share6.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Now redirect RStudio the new origin on the Birds Canda GitHub account</span></span>
-<span id="cb4-5"><a href="Share6.html#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="Share6.html#cb4-6" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_remote</span>(</span>
-<span id="cb4-7"><a href="Share6.html#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;origin&quot;</span>,</span>
-<span id="cb4-8"><a href="Share6.html#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git&quot;</span>,</span>
-<span id="cb4-9"><a href="Share6.html#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">overwrite =</span> <span class="cn">TRUE</span></span>
-<span id="cb4-10"><a href="Share6.html#cb4-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<span id="cb1-5"><a href="Share6.html#cb1-5" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_remotes</span>()</span>
+<span id="cb1-6"><a href="Share6.html#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="Share6.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#output example</span></span>
+<span id="cb1-8"><a href="Share6.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&quot;https://github.com/DMEthier/BirdsCanada_GitHubGuide.git&quot;</span></span>
+<span id="cb1-9"><a href="Share6.html#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="Share6.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Now redirect RStudio the new origin on the Birds Canada GitHub account</span></span>
+<span id="cb1-11"><a href="Share6.html#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="Share6.html#cb1-12" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_remote</span>(</span>
+<span id="cb1-13"><a href="Share6.html#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;origin&quot;</span>,</span>
+<span id="cb1-14"><a href="Share6.html#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git&quot;</span>,</span>
+<span id="cb1-15"><a href="Share6.html#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">overwrite =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-16"><a href="Share6.html#cb1-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p>Easy! You have now fixed the broken link and can contribute your changes to the new origin.</p>
 
 </div>
