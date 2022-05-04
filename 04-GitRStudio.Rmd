@@ -144,9 +144,13 @@ Really if we were being grammatically correct, we would probably refer to it as 
 knitr::include_graphics("images/Git19.PNG")
 ```
 
-> Note: all Git repos are initialized first in GitHub, the cloud version is the primary copy, referred to as the `origin`.
+The cloud/GitHub version of your repo is considered the primary copy, referred to as the `origin`. 
+If you only ever work from one computer, it's unlikely that the origin repo on GitHub will ever be ahead of your local repo. 
+But if you are collaborating or if you work from multiple computers, your local repo may be out of date.
+In these cases, making sure you regularly `pull` before `push` will help avoid conflicts in the code, so it's good practice to get into. 
+Luckily, if you forget to `pull` Git will warn you if you're about to push changes that conflict with changes previously made to the origin.
+Once you've committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can `push` these changes to GitHub.
 
-If you only ever work from one computer, it's unlikely that the origin repo on GitHub will be ahead of your local repo. But if you are collaborating or if you work from multiple computers, making sure you regularly `pull` before `push` will help avoid conflicts in the code, so it's good practice to get into. Once you've committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can `push` these changes to GitHub.
 
 ```{r image23, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git20.PNG")
@@ -154,9 +158,9 @@ knitr::include_graphics("images/Git20.PNG")
 
 Now the local and GitHub clones of this repo are in sync.
 
-## Step 6: Link RStudio to existing local .git repo {#RStud4.6}
+## Extra: Link RStudio to existing local Git repo {#RStud4.6}
 
-If you have a .git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your .git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a .git repo and it will set it up the project appropriately.
+If you have a Git repo on your computer that you created with GitHub Desktop, for example, you can link this to RStudio. First, create a `New Project` from the File menu in RStudio and select `Existing Directory`. Then navigate to your Git repo (aka folder). Select it and RStudio will base the new project out of this folder. RStudio will recognize that this folder is a Git repo and it will set it up the project appropriately.
 
 ```{r image24, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git16.PNG")
