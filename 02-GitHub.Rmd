@@ -102,6 +102,8 @@ First, get the software and account that you need:
 knitr::include_graphics("images/Git1.PNG")
 ```
 
+> **Note:** Most linux users will already have `git` installed, or should use their system's repositories to install `git`
+
 2.  Sign up for a GitHub account here: <https://github.com/join>
 
 ```{r image4, echo=FALSE, out.width="700px", fig.align='center'}
