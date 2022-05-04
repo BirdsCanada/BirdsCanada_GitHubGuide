@@ -7,15 +7,16 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
 
 ```
 
-You have chose to download and setup git in RStudio. This is a great option if you are actively coding.
+You have chosen to download and setup Git in RStudio. This is a great option if you are actively coding in R.
 
 ## Step 1: Download {#RStud4.1}
 
-The assumption was made that you have downloaded and are familiar with [R](https://cran.r-project.org/bin/windows/base/) and [RStudio](https://www.rstudio.com/products/rstudio/download/). But if you secretly need to download and get yourself familiar with these programs, you can do that now.
+The assumption is that you have downloaded and are familiar with [R](https://cran.r-project.org/bin/windows/base/) and [RStudio](https://www.rstudio.com/products/rstudio/download/), and that you are organizing your R work in [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects). 
+(But if you secretly need to download and get yourself familiar with these programs, you can do that now!)
 
 ## Step 2: Create New Repo {#RStud4.2}
 
-Once everything is set up, log in to GitHub and create a new repository. You'll make a new .git repo for each `R Project`.
+Once everything is set up, [log in to GitHub](#Git2.5) and create a new repository. You'll make a new Git repo for each RStudio Project folder.
 
 ```{r image13, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/Git4a.PNG")
@@ -28,18 +29,18 @@ knitr::include_graphics("images/Git5a.PNG")
 You will notice a few option here when setting up your new repo.
 
 -   Repository name (required): Think short but concise. No spaces permitted. Also, each repo must have a unique name.
+It can be helpful to have your RStudio project folders have the same name as the repository.
 
--   Public or Private repo: if you create a public repo, anyone on Github can see your work and seamless collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.
+-   Public or Private repo: if you create a public repo, anyone on Github can see your work and seamlessly collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.
 
 -   Initialize this repository with: `README`, `.gitignore`, `license`: it is good practice to include all three of these files in your repo.
 
 `README` file can be used to add a short description of your project.
 
-`.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell .git which files types to ignore in the repo (i.e. they won't be tracked or synced by Git). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file.
+`.gitignore` will have a drop down menu of templates. Select the template specific to R. This files tell Git which files types to ignore in the repo (i.e. they won't be tracked or synced by Git). For example, the session data files `.RData` and history files `.Rhistory` will not be backed up. You may also be working with very large raw data files that are too big for GitHub to handle. These can be added to the `.gitignore` file.
 
 `Choose a license` will also have a drop down menu. It is wise to protect your intellectual property by assigning a license to your scripts and associated documents. This is not mandatory, but recommend. For most of our work, the GNU General Public License v3.0 is a good choice. You can learn more about your options [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
 
-> Recall: all .git repos that are backup on the cloud are initialized from Github. This is referred to the `origin` repo.
 
 ## Step 3: Configure RStudio {#RStud4.3}
 
