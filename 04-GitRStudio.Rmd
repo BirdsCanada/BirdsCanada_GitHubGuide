@@ -108,7 +108,7 @@ Changes you make are not included in commits by default.
 To identify the changes you wish you commit, you `stage` them (think "add them to a staging area"). In the `Git` tab in RStudio, you will see check boxes under the word `staged`. 
 Checking these boxes allows you to `stage` all changes in a file that you would like to commit to your local repo.
 You can also click on the "Commit" button to choose specific changes within a file to stage, resulting in staging only parts of a file. 
-Having such fine grained control over which changes to commit is certainly handy, but it's perfectly accesptable to just stage all changes on each commit.
+Having such fine grained control over which changes to commit is certainly handy, but it's perfectly acceptable to just stage all changes on each commit.
 If you have many modified files you can easily stage them all by selecting them all using `CTRL A` then clicking any of the check boxes.
 
 ```{r image20, echo=FALSE, out.width="700px", fig.align='center'}
@@ -121,21 +121,22 @@ Now that you have `staged` your changes, we are going to `commit` to the local r
 knitr::include_graphics("images/Git18.PNG")
 ```
 
-Every `commit` must be accompanied by a summary. It can be anything, but it's helpful to make it short, clear, and descriptive so you know what changes are represented in that commit. Regardless of method used to interact with Git --- GitHub Desktop, RStudio, command line --- you must always provide a summary when committing.
+Every `commit` must be accompanied by a summary. It can be anything, but it's helpful to make it short, clear, and descriptive so you know what changes are represented in that commit. 
+Regardless of the method used to interact with Git --- GitHub Desktop, RStudio, command line --- you must *always* provide a summary when committing.
 
 Here are a few examples to help you get started:
 
--   first commit of data analysis code
+-   "first commit of data analysis code"
 
--   major updates to analysis. GLM to GAM
+-   "major updates to analysis. GLM to GAM"
 
--   changes to trends plots
+-   "changes to trends plots"
 
--   fix broken web links
+-   "fix broken web links"
 
-When you `commit` changes, .git saves every detail about the current state of the folder at that moment.
+When you `commit` changes, Git saves every detail about the current state of the folder at that moment.
 
-This is one of the most confusing things about git when you are just beginning because the word `commit` is both a verb and a noun. Once you commit (verb) the current state of your .git repo/folder it's referred to as a commit (noun).
+This is one of the most confusing things about Git when you are just beginning because the word `commit` is both a verb and a noun. Once you commit (verb) the current state of your Git repo/folder it's referred to as a commit (noun).
 
 Really if we were being grammatically correct, we would probably refer to it as a commitment, or something like that. But as it stands, the word `commit` is used for both the process and the state.
 
@@ -143,7 +144,7 @@ Really if we were being grammatically correct, we would probably refer to it as 
 knitr::include_graphics("images/Git19.PNG")
 ```
 
-> Note: all .git repos are initialized first in GitHub, the cloud version is the primary copy, referred to as the `origin`.
+> Note: all Git repos are initialized first in GitHub, the cloud version is the primary copy, referred to as the `origin`.
 
 If you only ever work from one computer, it's unlikely that the origin repo on GitHub will be ahead of your local repo. But if you are collaborating or if you work from multiple computers, making sure you regularly `pull` before `push` will help avoid conflicts in the code, so it's good practice to get into. Once you've committed to your local repo, and pulled the latest updates from the origin repo (on GitHub), you can `push` these changes to GitHub.
 
