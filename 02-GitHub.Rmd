@@ -52,9 +52,9 @@ When working with Git and GitHub, you are going to see the words `repo`, `origin
 
 **origin** - the primary Git repo, against which other copies are compared. In our examples, we will create the origin repo in GitHub
 
-**push** - sends changes from your local Git repo to the remote repository (e.g. GitHub)
+**push** - send changes from your local Git repo to the remote repository (e.g. GitHub)
 
-**pull** - gets changes from the cloud and updates your local Git repo
+**pull** - get changes from the cloud and updates your local Git repo
 
 > Note: this is different from a `pull request` which is when you want someone else to incorporate your changes into their GitHub repo. More on this later.
 
@@ -63,34 +63,36 @@ Like a bookmark of the current changes made. Often will be pushed to GitHub, but
 Can be a verb and a noun!
 In other words, when you commit your changes, you create a commit.
 
-**clone** - create a copy of a Git repo. In our examples, the repos will first be created on GitHub (i.e., origin) and then *cloned* to your local Git repo on your computer.
+**clone** - create a copy of a Git repo maintaining a direct link to the original repository.
+In our examples, the repos will first be created on GitHub (i.e., origin) and then *cloned* to your local Git repo on your computer.
 
-> Note: if you clone a repo from someone else GitHub account, you cannot contribute to their repo unless they have given you access.
-> In these circumstances your clone is called a `fork`.
+> Note: if you clone a repo from someone else GitHub account, you cannot contribute to their repo unless they have given you access, but if you do you are contributing directly to the repository.
 
-**fork** - creates a copy of a repo which maintained a connection between your local repo and the origin repo. Think of a folk as a bridge between the original repo and the local copy where changes can be made. After making and testing changes, you can contribute back to the original repo using a `pull request`.
+**fork** - create a copy of a repo which maintains a loose connection between your local repo and the origin repo. Think of a fork as a bridge between the original repo and the local copy where changes can be made. After making and testing changes, you can contribute back to the original repo using a `pull request` which must be approved by the repository owner.
 
-**branch** - is a new/separate version of the main repo. It is a way to develop new or modification to your R scripts, while not affecting the main part of the project. It is a feature in most version control systems.
+**branch** - new/separate versions of the repo. It is a way to modify your scripts, while not changing your original code. If you're happy with your changes you can eventually merge them into your original code.
+It is a feature in most version control systems.
 
-> Note: the primary or default branch in Git is the `master branch` (sometimes referred to as `main` branch). Think of the master branch as the trunk of the tree. Every repo contains at minimum this one branch, which is created when the repo is initialized.
+> Note: the primary or default branch in Git is the `master branch` (sometimes referred to as `main` branch). Think of the master branch as the trunk of the tree. Every repo contains at minimum this one branch, which is created when the repo is initialized. 
+If you want to test new changes, you would create another branch which could then be merged later.
 
-## Git to GitHub GUI {#Git2.4}
+## Git to GitHub GUIs {#Git2.4}
 
 There are multiple graphical interfaces for using Git and GitHub. This document will provide instructions for two methods: [GitHub Desktop](#Desk3) and [RStudio](#RStud4).
 
 Q: Which option is for you??
 
-A: It depends. GitHub Desktop and RStudio offer different advantages. Which is for you will largely depend on how you plan to use and interact with GitHub.
+A: It depends. GitHub Desktop and RStudio offer different advantages. Which is best for you will largely depend on how you plan to use and interact with GitHub.
 
 -   If you are not actively developing R code, and/or just need to get existing files into GitHub, GitHub Desktop is the easiest method, with the least amount of configuration.
 
 -   If you are actively writing analytical scripts in R, then using RStudio is recommend because there will be some additional instructions for using `R Projects` to organize your workflow and annotate your code.
 
-You can use multiple Git GUI at the same time without any issues so feel free to set up and get familiar with both.
+You can use multiple Git GUIs at the same time without any issues so feel free to set up and get familiar with both.
 
 ## Getting Started {#Git2.5}
 
-Regardless of the GUI you select to use, there are a few steps you need to take to get started.
+Regardless of the GUI you choose to use, there are a few steps you need to take to get started.
 
 First, get the software and account that you need:
 
