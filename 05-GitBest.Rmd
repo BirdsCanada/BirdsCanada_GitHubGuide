@@ -72,9 +72,9 @@ GitHub has a built-in code owners feature that allows you to grant access to a p
 
 ## Don't let your password leak into your code {#Best5.5}
 
-While it seems obvious that you should not share your password, you might accidentally save this in your source code and `commit` it to Github. For example, when downloading data from NatureCounts using the R package, you might be inclined to save your username and password in your source code. Ensure this isn't the case before you `commit`!
+While it seems obvious that you should not share your password, you might accidentally save this in your source code and `commit` it to GitHub. For example, when downloading data from NatureCounts using the R package, you might be inclined to save your username and password in your source code. Ensure this isn't the case before you `commit`!
 
-## Don't commit an crime {#Best5.6}
+## Don't commit a crime {#Best5.6}
 
 Make small commits and make them often. Each commit should reflect changes that are easily accompanied by a single and informative commit message. For example:
 
@@ -84,4 +84,4 @@ You should try to refrain from making a lot of changes to a lot of sections of y
 
 > Major changes to analysis, data manip, and bookdown yml.
 
-If you need to revert any files, you will be happy up made consistent and well detailed commits.
+If you need to revert any files, or even just check your history of file changes, you will be happy you made consistent and well detailed commits.
