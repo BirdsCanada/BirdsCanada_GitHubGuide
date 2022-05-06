@@ -7,13 +7,13 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
 
 ```
 
-Now that you have mastered the basics of working with .git and Github using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else's scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longtern storage and management.
+Now that you have mastered the basics of working with Git and GitHub using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else's scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longterm storage and management.
 
 ## Contributing code with RStudio {#Share6.1}
 
 The idea of contributing code to someones repo can seem daunting at first. Let's keep it simple to start.
 
--   First, you will want to `Fork` the target repo to your own account. Navigate to your collaborators GitHub page (e.g., [Birds Canada](https://github.com/BirdsCanada)), select the repo you want to work on, and use the `Fork` icon in the top right corner. Then select 'Create Fork'.
+-   First, you will want to `Fork` the target repo to your own account. Navigate to your collaborator's GitHub page (e.g., [Birds Canada](https://github.com/BirdsCanada)), select the repo you want to work on, and use the `Fork` icon in the top right corner. Then select 'Create Fork'.
 
 ```{r imagefork, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("images/GitFork.PNG")
