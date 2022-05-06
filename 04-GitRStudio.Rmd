@@ -34,7 +34,7 @@ You will notice a few option here when setting up your new repo.
 -   Repository name (required): Think short but concise. No spaces permitted. Also, each repo must have a unique name.
 This will also be the name of the R project folder on your computer.
 
--   Public or Private repo: if you create a public repo, anyone on Github can see your work and seamlessly collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.
+-   Public or Private repo: if you create a public repo, anyone on GitHub can see your work and seamlessly collaborate with you. A private repo can only be seen and accessed by you. You can add individual permissions to a Private repo to allow collaboration. And you can change the privacy setting at a later date.
 
 -   Initialize this repository with: `README`, `.gitignore`, `license`: it is good practice to include all three of these files in your repo.
 

@@ -44,7 +44,7 @@ Image credit: devmountain.com
 
 ## The Language of Git {#Git2.3}
 
-Were you the kid that was tormented by your siblings speaking Pig Latin (also known as "Igpay Atinlay") and no matter how hard you tried, you couldn't figure it out? Learning to use Git and Github can feel like learning a new language. But we promise it is easier than Pig Latin.
+Were you the kid that was tormented by your siblings speaking Pig Latin (also known as "Igpay Atinlay") and no matter how hard you tried, you couldn't figure it out? Learning to use Git and GitHub can feel like learning a new language. But we promise it is easier than Pig Latin.
 
 When working with Git and GitHub, you are going to see the words `repo`, `origin`, `commit`, `push`, `pull`, `clone`, `fork`, and `branch`, among others. We will start with some basic definitions here, and in later chapters will elaborate on terms as necessary.
 

@@ -18,7 +18,7 @@ You can host multiple projects on GitHub at the same time but it would be a mist
 A `branch` is a way work on alternative versions of your scripts (e.g., a new feature or modification), 
 while not affecting the original (i.e., the main or default branch). 
 It is good practice to work on short-lived branches, so that merging is easier.
-If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on Github. 
+If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on GitHub. 
 But once you are making changes to established code, or are collaborating on code development, you will want to create a separate `branch` to work on so that you are not risking breaking what is already working!
 
 -   **Create a branch**: This is the first step in the process, you create a new branch for the development using the symbol (next to the current branch name).
