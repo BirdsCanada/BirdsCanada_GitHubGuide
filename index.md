@@ -14,9 +14,7 @@ cover-image: index.PNG
 
 # {-}
 
-```{r coverimage, echo=FALSE, out.width="700px", fig.align='center'}
-knitr::include_graphics("images/index.PNG")
-```
+<img src="images/index.PNG" width="700px" style="display: block; margin: auto;" />
 
 
 

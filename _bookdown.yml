@@ -2,6 +2,6 @@ book_filename: "GitHub A Beginners Guide"
 chapter_name: "Chapter "
 repo: https://github.com/DMEthier/BirdsCanada_GitHubGuide
 output_dir: docs
-rmd_files: ["index.Rmd", "01-Intro.Rmd", "02-GitHub.Rmd", "03-GitDesk.Rmd", "04-GitRStudio.Rmd", "05-GitBest.Rmd", "06-GitShare.Rmd", "07-GitResources.Rmd"]
+rmd_files: ["index.Rmd", "01-Intro.Rmd", "02-GitHub.Rmd", "03-GitDesk.Rmd", "04-GitRStudio.Rmd", "05-GitBranch.Rmd", "06-GitShare.Rmd", "07-GitBest.Rmd", "08-GitResources.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
