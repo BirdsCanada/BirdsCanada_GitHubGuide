@@ -7,7 +7,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50), tidy = FALSE)
 
 ```
 
-Now that you have mastered the basics of working with Git and GitHub using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else's scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longterm storage and management.
+Now that you have mastered the basics of working with Git and GitHub using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else's scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for long-term storage and management.
 
 ## Contributing code with RStudio {#Share6.1}
 
@@ -35,7 +35,7 @@ Once your code is fully developed and tested, it can be transferred to Birds Can
 
 By transferring the repository to Birds Canada, its content, issues, pull request, etc., can be administered without the need for your input moving forward. If you are a contractor, this makes sense since you may or many not be involved with future script development. If you are a regular employee, your scripts will be more accessible to other staff for collaborative development, and this ensures they are not lost if you move on to other projects or organizations.
 
-> **You can still contribute to the scripts once transferred, and you will still be given credit for authorship (or co-authorship)**
+> Note: You can still contribute to the scripts once transferred, and you will still be given credit for authorship (or co-authorship).
 
 ### Prerequisites for repository transfers {#Share6.2.1}
 
@@ -43,7 +43,11 @@ By transferring the repository to Birds Canada, its content, issues, pull reques
 
 -   To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.
 
-> **If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know and I will add you: [dethier\@birdscanada.org](mailto:dethier@birdscanada.org){.email}**
+    <div>
+
+    **If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know and I will add you: [dethier\@birdscanada.org](mailto:dethier@birdscanada.org){.email}**
+
+    </div>
 
 -   The target account/organization must not have a repository with the same name, or a fork in the same network.
 

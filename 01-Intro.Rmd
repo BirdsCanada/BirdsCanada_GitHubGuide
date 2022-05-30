@@ -19,7 +19,7 @@ Someone unfamiliar with your project should be able to look at your R code, data
 
 Staff turnover is also a reality in all organizations. If you leave Birds Canada for greener pastures, your colleagues/ replacements will also need to know where to find your scripts, files, and outputs. This will better ensure knowledge is not lost and time is not wasted recreating your workflows.
 
-Last, it is increasingly required by funders, partners, and publishers that data and analytical script be made available, such that the *FAIR* principal of data management and stewardship are followed: Findability, Accessibility, Interoperability, and Reusability of digital assets. This is also a priority for Birds Canada as we strive to make our work more open and transparent.
+Last, it is increasingly required by funders, partners, and publishers that data and analytical script be made available, such that the *FAIR* principal of data management and stewardship are followed: Findability, Accessibility, Interoperability, and Reusability. This is also a priority for Birds Canada as we strive to make our work more open and transparent.
 
 ## Prerequisites {#intro1.2}
 
@@ -27,6 +27,6 @@ This book assumes that you have a basic understanding of R and RStudio. Regardle
 
 ## Acknowledgements {#intro1.3}
 
-Funding for this initiative was provided by ...
+Dr. Steffi LaZerte provided valuable comments and edits to improve the clarity and usability of this book.
 
 This R book will be updated as needed. If you have any comments or feedback, please submit them to [dethier\@birdscanada.org](mailto:dethier@birdscanada.org){.email}.
