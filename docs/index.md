@@ -1,7 +1,7 @@
 --- 
 title: "GitHub: A Beginners Guide"
 author: "Danielle Ethier and Josh Sayers, Birds Canada"
-date: "Version 1: March 2022"
+date: "Version 2: June 2022"
 site: bookdown::bookdown_site
 documentclass: book
 biblio-style: apalike

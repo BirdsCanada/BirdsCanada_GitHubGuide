@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Sharing GitHub Scripts | GitHub: A Beginners Guide</title>
   <meta name="description" content="Promoting R code sharing and achiving standards within Birds Canada" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Sharing GitHub Scripts | GitHub: A Beginners Guide" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git" />
   <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/index.PNG" />
   <meta property="og:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="github-repo" content="DMEthier/BirdsCanada_GitHubGuide" />
@@ -30,9 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="Best5.html"/>
-<link rel="next" href="Resource7.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<link rel="prev" href="Branch5.html"/>
+<link rel="next" href="Best7.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -147,8 +146,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="Git2.html"><a href="Git2.html#Git2.1"><i class="fa fa-check"></i><b>2.1</b> Git</a></li>
 <li class="chapter" data-level="2.2" data-path="Git2.html"><a href="Git2.html#Git2.2"><i class="fa fa-check"></i><b>2.2</b> GitHub</a></li>
-<li class="chapter" data-level="2.3" data-path="Git2.html"><a href="Git2.html#Git2.3"><i class="fa fa-check"></i><b>2.3</b> .git the language</a></li>
-<li class="chapter" data-level="2.4" data-path="Git2.html"><a href="Git2.html#Git2.4"><i class="fa fa-check"></i><b>2.4</b> .git to GitHub GUI</a></li>
+<li class="chapter" data-level="2.3" data-path="Git2.html"><a href="Git2.html#Git2.3"><i class="fa fa-check"></i><b>2.3</b> Git the language?</a></li>
+<li class="chapter" data-level="2.4" data-path="Git2.html"><a href="Git2.html#Git2.4"><i class="fa fa-check"></i><b>2.4</b> Git to GitHub GUIs</a></li>
 <li class="chapter" data-level="2.5" data-path="Git2.html"><a href="Git2.html#Git2.5"><i class="fa fa-check"></i><b>2.5</b> Getting Started</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Desk3.html"><a href="Desk3.html"><i class="fa fa-check"></i><b>3</b> Setup GitHub Desktop</a>
@@ -156,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="Desk3.html"><a href="Desk3.html#Desk3.1"><i class="fa fa-check"></i><b>3.1</b> Step 1: Download</a></li>
 <li class="chapter" data-level="3.2" data-path="Desk3.html"><a href="Desk3.html#Desk3.2"><i class="fa fa-check"></i><b>3.2</b> Step 2: Create New Repo</a></li>
 <li class="chapter" data-level="3.3" data-path="Desk3.html"><a href="Desk3.html#Desk3.3"><i class="fa fa-check"></i><b>3.3</b> Step 3: Set up Desktop</a></li>
-<li class="chapter" data-level="3.4" data-path="Desk3.html"><a href="Desk3.html#Desk3.4"><i class="fa fa-check"></i><b>3.4</b> Step 4: Copy files into your local .git repo</a></li>
+<li class="chapter" data-level="3.4" data-path="Desk3.html"><a href="Desk3.html#Desk3.4"><i class="fa fa-check"></i><b>3.4</b> Step 4: Copy files into your local Git repo</a></li>
 <li class="chapter" data-level="3.5" data-path="Desk3.html"><a href="Desk3.html#Desk3.5"><i class="fa fa-check"></i><b>3.5</b> Step 5: Upload to GitHub</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="RStud4.html"><a href="RStud4.html"><i class="fa fa-check"></i><b>4</b> Setup Git in RStudio</a>
@@ -164,18 +163,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="RStud4.html"><a href="RStud4.html#RStud4.1"><i class="fa fa-check"></i><b>4.1</b> Step 1: Download</a></li>
 <li class="chapter" data-level="4.2" data-path="RStud4.html"><a href="RStud4.html#RStud4.2"><i class="fa fa-check"></i><b>4.2</b> Step 2: Create New Repo</a></li>
 <li class="chapter" data-level="4.3" data-path="RStud4.html"><a href="RStud4.html#RStud4.3"><i class="fa fa-check"></i><b>4.3</b> Step 3: Configure RStudio</a></li>
-<li class="chapter" data-level="4.4" data-path="RStud4.html"><a href="RStud4.html#RStud4.4"><i class="fa fa-check"></i><b>4.4</b> Step 4: Initializing a .git repo from RStudio</a></li>
+<li class="chapter" data-level="4.4" data-path="RStud4.html"><a href="RStud4.html#RStud4.4"><i class="fa fa-check"></i><b>4.4</b> Step 4: Clone the Repository from RStudio</a></li>
 <li class="chapter" data-level="4.5" data-path="RStud4.html"><a href="RStud4.html#RStud4.5"><i class="fa fa-check"></i><b>4.5</b> Step 5: Stage, commit and push</a></li>
-<li class="chapter" data-level="4.6" data-path="RStud4.html"><a href="RStud4.html#RStud4.6"><i class="fa fa-check"></i><b>4.6</b> Step 6: Link RStudio to existing local .git repo</a></li>
+<li class="chapter" data-level="4.6" data-path="RStud4.html"><a href="RStud4.html#RStud4.6"><i class="fa fa-check"></i><b>4.6</b> Extra: Link RStudio to existing local Git repo</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="Best5.html"><a href="Best5.html"><i class="fa fa-check"></i><b>5</b> GitHub Best Practices</a>
+<li class="chapter" data-level="5" data-path="Branch5.html"><a href="Branch5.html"><i class="fa fa-check"></i><b>5</b> GitHub Branch</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="Best5.html"><a href="Best5.html#Best5.1"><i class="fa fa-check"></i><b>5.1</b> Use a unique repository for each project</a></li>
-<li class="chapter" data-level="5.2" data-path="Best5.html"><a href="Best5.html#Best5.2"><i class="fa fa-check"></i><b>5.2</b> Use branches to avoid heartache</a></li>
-<li class="chapter" data-level="5.3" data-path="Best5.html"><a href="Best5.html#Best5.3"><i class="fa fa-check"></i><b>5.3</b> Create a meaningful .gitignore file</a></li>
-<li class="chapter" data-level="5.4" data-path="Best5.html"><a href="Best5.html#Best5.4"><i class="fa fa-check"></i><b>5.4</b> Define the code owner</a></li>
-<li class="chapter" data-level="5.5" data-path="Best5.html"><a href="Best5.html#Best5.5"><i class="fa fa-check"></i><b>5.5</b> Don’t let your password leak into your code</a></li>
-<li class="chapter" data-level="5.6" data-path="Best5.html"><a href="Best5.html#Best5.6"><i class="fa fa-check"></i><b>5.6</b> Don’t commit an crime</a></li>
+<li class="chapter" data-level="5.1" data-path="Branch5.html"><a href="Branch5.html#Branch5.1"><i class="fa fa-check"></i><b>5.1</b> Step 1: Create a branch</a></li>
+<li class="chapter" data-level="5.2" data-path="Branch5.html"><a href="Branch5.html#Branch5.2"><i class="fa fa-check"></i><b>5.2</b> Step 2: Name your branch</a></li>
+<li class="chapter" data-level="5.3" data-path="Branch5.html"><a href="Branch5.html#Branch5.3"><i class="fa fa-check"></i><b>5.3</b> Step 3: Make changes</a></li>
+<li class="chapter" data-level="5.4" data-path="Branch5.html"><a href="Branch5.html#Branch5.4"><i class="fa fa-check"></i><b>5.4</b> Step 4: Push changes</a></li>
+<li class="chapter" data-level="5.5" data-path="Branch5.html"><a href="Branch5.html#Branch5.5"><i class="fa fa-check"></i><b>5.5</b> Step 5: Compare &amp; pull request</a></li>
+<li class="chapter" data-level="5.6" data-path="Branch5.html"><a href="Branch5.html#Branch5.6"><i class="fa fa-check"></i><b>5.6</b> Step 6: Delete branch</a></li>
+<li class="chapter" data-level="5.7" data-path="Branch5.html"><a href="Branch5.html#Branch5.7"><i class="fa fa-check"></i><b>5.7</b> Tips to keep you popular</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="Share6.html"><a href="Share6.html"><i class="fa fa-check"></i><b>6</b> Sharing GitHub Scripts</a>
 <ul>
@@ -186,10 +186,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.2.2" data-path="Share6.html"><a href="Share6.html#Share6.2.2"><i class="fa fa-check"></i><b>6.2.2</b> Step-by-Step</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="Resource7.html"><a href="Resource7.html"><i class="fa fa-check"></i><b>7</b> GitHub Resources</a>
+<li class="chapter" data-level="7" data-path="Best7.html"><a href="Best7.html"><i class="fa fa-check"></i><b>7</b> GitHub Best Practices</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="Resource7.html"><a href="Resource7.html#Resource7.1"><i class="fa fa-check"></i><b>7.1</b> RStudio Resources</a></li>
-<li class="chapter" data-level="7.2" data-path="Resource7.html"><a href="Resource7.html#Resource7.2"><i class="fa fa-check"></i><b>7.2</b> GitHub Desktop Resources</a></li>
+<li class="chapter" data-level="7.1" data-path="Best7.html"><a href="Best7.html#Best7.1"><i class="fa fa-check"></i><b>7.1</b> Use a unique repository for each project</a></li>
+<li class="chapter" data-level="7.2" data-path="Best7.html"><a href="Best7.html#Best7.2"><i class="fa fa-check"></i><b>7.2</b> Use branches to avoid heartache</a></li>
+<li class="chapter" data-level="7.3" data-path="Best7.html"><a href="Best7.html#Best7.3"><i class="fa fa-check"></i><b>7.3</b> Create a meaningful <code>.gitignore</code> file</a></li>
+<li class="chapter" data-level="7.4" data-path="Best7.html"><a href="Best7.html#Best7.4"><i class="fa fa-check"></i><b>7.4</b> Define the code owner</a></li>
+<li class="chapter" data-level="7.5" data-path="Best7.html"><a href="Best7.html#Best7.5"><i class="fa fa-check"></i><b>7.5</b> Don’t let your password leak into your code</a></li>
+<li class="chapter" data-level="7.6" data-path="Best7.html"><a href="Best7.html#Best7.6"><i class="fa fa-check"></i><b>7.6</b> Don’t commit a crime</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Resource8.html"><a href="Resource8.html"><i class="fa fa-check"></i><b>8</b> GitHub Resources</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Resource8.html"><a href="Resource8.html#Resource8.1"><i class="fa fa-check"></i><b>8.1</b> RStudio Resources</a></li>
+<li class="chapter" data-level="8.2" data-path="Resource8.html"><a href="Resource8.html#Resource8.2"><i class="fa fa-check"></i><b>8.2</b> GitHub Desktop Resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -211,53 +220,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Share6" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Sharing GitHub Scripts</h1>
-<p>Now that you have mastered the basics of working with .git and Github using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else’s scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for longtern storage and management.</p>
-<div id="Share6.1" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Contributing code with RStudio</h2>
+<div id="Share6" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Sharing GitHub Scripts<a href="Share6.html#Share6" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Now that you have mastered the basics of working with Git and GitHub using your preferred GUI you are ready to start collaborating (i.e., contribute to someones else’s scripts). We will also walk you though how to transfer your repo to a new organization (e.g., Birds Canada) for long-term storage and management.</p>
+<div id="Share6.1" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Contributing code with RStudio<a href="Share6.html#Share6.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The idea of contributing code to someones repo can seem daunting at first. Let’s keep it simple to start.</p>
 <ul>
-<li>First, you will want to <code>Fork</code> the target repo to your own account. Navigate to your collaborators GitHub page (e.g., <a href="https://github.com/BirdsCanada">Birds Canada</a>), select the repo you want to work on, and use the <code>Fork</code> icon in the top right corner. Then select ‘Create Fork’.</li>
+<li>First, you will want to <code>Fork</code> the target repo to your own account. Navigate to your collaborator’s GitHub page (e.g., <a href="https://github.com/BirdsCanada">Birds Canada</a>), select the repo you want to work on, and use the <code>Fork</code> icon in the top right corner. Then select ‘Create Fork’.</li>
 </ul>
 <p><img src="images/GitFork.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ul>
 <li><p>Now the repo will appear in your list of Repositories on your personal Github page. You can clone the repo to your local machine using the instructions previously provided for <a href="RStud4.html#RStud4.4">RStudio</a>.</p></li>
-<li><p>Check out a new <code>branch</code> using the instructions previously provided in <a href="Best5.html#Best5.2">Use branches to avoid heartache</a>. This will make a branch of your forked repo.</p></li>
-<li><p>You will create a <code>pull request</code> when you are finished contributing to the branch. The difference now is that the repo owner will need to <code>Compare &amp; Pull request</code> on their Github account. This given them a chance to review your changes before merging them with the main branch.</p></li>
+<li><p>Check out a new <code>branch</code> using the instructions previously provided in <a href="#Best5.2">Use branches to avoid heartache</a>. This will make a branch of your forked repo.</p></li>
+<li><p>Once you’re finished your edits, you will create a <code>pull request</code>. The difference now is that the repo owner will need to merge the pull request on their Github account. This gives them a chance to review your changes before merging them with the main branch.</p></li>
 </ul>
 <p>Those are the basics to get you started.</p>
 </div>
-<div id="Share6.2" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Transferring ownership</h2>
+<div id="Share6.2" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Transferring ownership<a href="Share6.html#Share6.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once your code is fully developed and tested, it can be transferred to Birds Canada’s Github account for future management.</p>
-<p>Why would you want to transfer ownership?</p>
-<p>By transferring the repository to Birds Canada, its content, issues, pull request, ect., can be administer without the need for your input moving forward. If you are a contractor, this makes sense since you may or many not be involved with future script development. If you are a regular employee, your scripts will be more accessible to other staff for collaborative development, and will ensure they are not lost if you choose to leave the organization.</p>
-<p><strong>You can still contribute to the scripts once transferred, and you will still be given credit for authorship (or co-authorship)</strong></p>
-<div id="Share6.2.1" class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Prerequisites for repository transfers</h3>
+<p><strong>Why would you want to transfer ownership?</strong></p>
+<p>By transferring the repository to Birds Canada, its content, issues, pull request, etc., can be administered without the need for your input moving forward. If you are a contractor, this makes sense since you may or many not be involved with future script development. If you are a regular employee, your scripts will be more accessible to other staff for collaborative development, and this ensures they are not lost if you move on to other projects or organizations.</p>
+<blockquote>
+<p>Note: You can still contribute to the scripts once transferred, and you will still be given credit for authorship (or co-authorship).</p>
+</blockquote>
+<div id="Share6.2.1" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Prerequisites for repository transfers<a href="Share6.html#Share6.2.1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>When you transfer a repository that you own to another user account, the new owner will receive a confirmation email. The confirmation email includes instructions for accepting the transfer. If the new owner doesn’t accept the transfer within one day, the invitation will expire.</p></li>
-<li><p>To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.</p></li>
-</ul>
-<blockquote>
+<li><p>To transfer a repository that you own to an organization, you must have permission to create a repository in the target organization.</p>
+<div>
 <p><strong>If you are not yet a member of the Birds Canada organization on GitHub and need to transfer ownership of your code, please let me know and I will add you: <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a></strong></p>
-</blockquote>
-<ul>
-<li><p>The target account must not have a repository with the same name, or a fork in the same network.</p></li>
+</div></li>
+<li><p>The target account/organization must not have a repository with the same name, or a fork in the same network.</p></li>
 <li><p>The original owner of the repository is added as a collaborator on the transferred repository. Other collaborators to the transferred repository remain intact.</p></li>
-<li><p>Private forks can’t be transferred.</p></li>
+<li><p>Private forks can’t be transferred (you must first make them public).</p></li>
 </ul>
 </div>
-<div id="Share6.2.2" class="section level3" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> Step-by-Step</h3>
+<div id="Share6.2.2" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Step-by-Step<a href="Share6.html#Share6.2.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li><p>On your GitHub account online, navigate to the main page of the repository you wish to transfer.</p></li>
+<li><p>In your online GitHub account, navigate to the main page of the repository you wish to transfer.</p></li>
 <li><p>Once you have navigate to your repository, click Settings.</p></li>
 </ol>
 <p><img src="images/GitSettings.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
-<li>Under the General tab, scroll to the very bottom labeled “Danger Zone”. Click on Transfer Ownership.</li>
+<li>Under the General tab, scroll to the very bottom labelled “Danger Zone”. Click on Transfer Ownership.</li>
 </ol>
 <p><img src="images/GitTransfer.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
@@ -265,9 +274,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p><img src="images/GitTransfer2.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <ol start="5" style="list-style-type: decimal">
-<li>If you are part of the Birds Canada staff ‘Team’ on Github, you can click this box to allow other staff to access your scripts.</li>
+<li>If you are part of the Birds Canada staff ‘Team’ on GitHub, you can click this box to allow other staff to access your scripts.</li>
 </ol>
-<p><strong>You have now transferred ownership, but you also broken the connection between the GitHub repo and RStudio. Don’t panic! We can fit this without needing to use the command line interface.</strong></p>
+<p><strong>You have now transferred ownership, but you also broken the connection between the GitHub repo and RStudio. Don’t panic! We can fix this without needing to use the command line interface.</strong></p>
 <p>Here is some sample R code for changing the origin of the repo from your personal GitHub account to Birds Canada.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="Share6.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load the library</span></span>
 <span id="cb1-2"><a href="Share6.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (usethis)</span>
@@ -285,7 +294,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-14"><a href="Share6.html#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;https://github.com/BirdsCanada/BirdsCanada_GitHubGuide.git&quot;</span>,</span>
 <span id="cb1-15"><a href="Share6.html#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">overwrite =</span> <span class="cn">TRUE</span></span>
 <span id="cb1-16"><a href="Share6.html#cb1-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<p>Easy! You have now fixed the broken link and can contribute your changes to the new origin.</p>
+<p>Whew! You have now fixed the broken link and can contribute your changes to the new origin.</p>
 
 </div>
 </div>
@@ -295,8 +304,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="Best5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Resource7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="Branch5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Best7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

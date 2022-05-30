@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | GitHub: A Beginners Guide</title>
+  <title>Chapter 5 GitHub Branch | GitHub: A Beginners Guide</title>
   <meta name="description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta property="og:title" content="Chapter 5 GitHub Branch | GitHub: A Beginners Guide" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/index.PNG" />
   <meta property="og:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="github-repo" content="DMEthier/BirdsCanada_GitHubGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | GitHub: A Beginners Guide" />
+  <meta name="twitter:title" content="Chapter 5 GitHub Branch | GitHub: A Beginners Guide" />
   
   <meta name="twitter:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="twitter:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/index.PNG" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="Git2.html"/>
+<link rel="prev" href="RStud4.html"/>
+<link rel="next" href="Share6.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -220,25 +220,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Intro1" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="Intro1.html#Intro1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>You are here because creating reproducible and accessible R code is important to your job with <a href="https://www.birdscanada.org/">Birds Canada</a> and ultimately to bird conservation.</p>
-<p>The goal of this guidebook is to give you (analytically savvy staff/ contractors/ partners) the tools needed to develop reproducible R code and step-by-step instructions on how to archive your old code or share your existing code and relevant documents in <a href="https://github.com/">GitHub</a>. Later chapters of this book will discuss working collaboratively using Git version control and GitHub. But do not fret, we will start with the basics first.</p>
-<p>While some of the instructions in this book are general guidelines/ best practices, others are mandatory for staff and contractors to ensure analytical scripts are properly stored and accessible for future use.</p>
-<div id="intro1.1" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Why is this Important?<a href="Intro1.html#intro1.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Someone unfamiliar with your project should be able to look at your R code, data files, and outputs and understand in detail what you did and why. This <em>someone</em> will very likely be your future self! We very often discover flaws in our initial preparation of the data, get access to new data, or decide that the parameterization of a particular model was not correct. This means that the analysis you did last week/ month/ year will probably need to be redone. If you have organized and documented your work clearly, then repeating the analysis will be much, much easier.</p>
-<p>Staff turnover is also a reality in all organizations. If you leave Birds Canada for greener pastures, your colleagues/ replacements will also need to know where to find your scripts, files, and outputs. This will better ensure knowledge is not lost and time is not wasted recreating your workflows.</p>
-<p>Last, it is increasingly required by funders, partners, and publishers that data and analytical script be made available, such that the <em>FAIR</em> principal of data management and stewardship are followed: Findability, Accessibility, Interoperability, and Reusability. This is also a priority for Birds Canada as we strive to make our work more open and transparent.</p>
+<div id="Branch5" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> GitHub Branch<a href="Branch5.html#Branch5" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A <code>branch</code> is a way work on alternative versions of your scripts (e.g., a new feature or modification), while not affecting the original (i.e., the main or default branch). It is good practice to work on short-lived branches, so that merging is easier. If you are working on developing new code, you will probably work from a single branch, called the main or default branch, and commit changes as you go to the origin on GitHub. But once you are making changes to established code, or are collaborating on code development, you will want to create a separate <code>branch</code> to work on so that you are not risking breaking what is already working!</p>
+<p>Here are some steps to get you started. We only provide instructions for RStudio because we assume if you are actively coding you are using RStudio.</p>
+<div id="Branch5.1" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Step 1: Create a branch<a href="Branch5.html#Branch5.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Create a new branch using the symbol next to the current branch name.</p>
+<p><img src="images/GitBranch.PNG" width="700px" style="display: block; margin: auto;" /></p>
 </div>
-<div id="intro1.2" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Prerequisites<a href="Intro1.html#intro1.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This book assumes that you have a basic understanding of R and RStudio. Regardless of whether you are new to R or not, we highly recommend that you become familiar with <a href="http://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. Their book covers how to import, visualize, and summarize data in R using the <a href="https://www.tidyverse.org/">tidyverse</a> collection of R packages. It also provides an invaluable framework for organizing your <a href="http://r4ds.had.co.nz/workflow-projects.html">workflow</a> to create clean, reproducible code.</p>
+<div id="Branch5.2" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Step 2: Name your branch<a href="Branch5.html#Branch5.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Give your branch a meaningful name that is all lower case with no spaces. Then check the box <code>Sync branch with remote</code> and then <code>Create</code>. This is now called the feature or topic branch.</p>
+<p><img src="images/namebranch.PNG" width="700px" style="display: block; margin: auto;" /></p>
 </div>
-<div id="intro1.3" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> Acknowledgements<a href="Intro1.html#intro1.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Dr. Steffi LaZerte provided valuable comments and edits to improve the clarity and usability of this book.</p>
-<p>This R book will be updated as needed. If you have any comments or feedback, please submit them to <a href="mailto:dethier@birdscanada.org" class="email">dethier@birdscanada.org</a>.</p>
+<div id="Branch5.3" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Step 3: Make changes<a href="Branch5.html#Branch5.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Edit the script as you want within the branch using RStudio. This is when you can break what is working and test new ideas.</p>
+</div>
+<div id="Branch5.4" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Step 4: Push changes<a href="Branch5.html#Branch5.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you have tested your new scripts and are <em>positive</em> they are working, you can <code>stage</code>, <code>commit</code> and <code>push</code> your changes to GitHub, using the same instructions previously provided in <a href="RStud4.html#RStud4.5">Chapter 4</a>.</p>
+</div>
+<div id="Branch5.5" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Step 5: Compare &amp; pull request<a href="Branch5.html#Branch5.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you are satisfied with your work, you can open a pull request to merge the changes with the main branch. Navigate to your Github repository (online) and click on <code>Compare &amp; Pull requests</code> then select <code>Create pull request</code>.</p>
+<p><img src="images/comparepull.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>Now you should be given the option to `Merge pull request’ if there are not conflicts with the base branch, then select “Confirm merge”.</p>
+<p><img src="images/merge.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<p>As you have noticed, GitHub has a series of safety checks to ensure you don’t accidentally merge changes you don’t intend to merge.</p>
+</div>
+<div id="Branch5.6" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Step 6: Delete branch<a href="Branch5.html#Branch5.6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once complete, you can delete the old branch. Github will prompt you to do this. All you need to do is select ‘Delete branch’.</p>
+<p><img src="images/deletebranch.PNG" width="700px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="Branch5.7" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Tips to keep you popular<a href="Branch5.html#Branch5.7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In order to remain popular with your peers when working on collaborative projects, keep these consideration in mind when working with branches:</p>
+<ul>
+<li><p>Never merge locally on your machine. Always merge branches online.</p></li>
+<li><p>Always <code>commit</code> into a feature/topic branch, never to the master branch.</p></li>
+<li><p>Always start a new branch from the main branch.</p></li>
+<li><p>Only work on your own branches.</p></li>
+<li><p>Never merge a collaborators pull request without their consent.</p></li>
+<li><p>Branches should be short-lived.</p></li>
+</ul>
+<p>Now you are ready to branch. We suggest you do a test to see how it works and get comfortable with the process before working with collaborators.</p>
 
 </div>
 </div>
@@ -247,8 +275,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Git2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="RStud4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Share6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

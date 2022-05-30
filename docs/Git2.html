@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 What are Git and GitHub? | GitHub: A Beginners Guide</title>
   <meta name="description" content="Promoting R code sharing and achiving standards within Birds Canada" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 What are Git and GitHub? | GitHub: A Beginners Guide" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git" />
   <meta property="og:image" content="https://github.com/DMEthier/BirdsCanada_GitHubGuide.git/index.PNG" />
   <meta property="og:description" content="Promoting R code sharing and achiving standards within Birds Canada" />
   <meta name="github-repo" content="DMEthier/BirdsCanada_GitHubGuide" />
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="Intro1.html"/>
 <link rel="next" href="Desk3.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -147,8 +146,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="Git2.html"><a href="Git2.html#Git2.1"><i class="fa fa-check"></i><b>2.1</b> Git</a></li>
 <li class="chapter" data-level="2.2" data-path="Git2.html"><a href="Git2.html#Git2.2"><i class="fa fa-check"></i><b>2.2</b> GitHub</a></li>
-<li class="chapter" data-level="2.3" data-path="Git2.html"><a href="Git2.html#Git2.3"><i class="fa fa-check"></i><b>2.3</b> .git the language</a></li>
-<li class="chapter" data-level="2.4" data-path="Git2.html"><a href="Git2.html#Git2.4"><i class="fa fa-check"></i><b>2.4</b> .git to GitHub GUI</a></li>
+<li class="chapter" data-level="2.3" data-path="Git2.html"><a href="Git2.html#Git2.3"><i class="fa fa-check"></i><b>2.3</b> Git the language?</a></li>
+<li class="chapter" data-level="2.4" data-path="Git2.html"><a href="Git2.html#Git2.4"><i class="fa fa-check"></i><b>2.4</b> Git to GitHub GUIs</a></li>
 <li class="chapter" data-level="2.5" data-path="Git2.html"><a href="Git2.html#Git2.5"><i class="fa fa-check"></i><b>2.5</b> Getting Started</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Desk3.html"><a href="Desk3.html"><i class="fa fa-check"></i><b>3</b> Setup GitHub Desktop</a>
@@ -156,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="Desk3.html"><a href="Desk3.html#Desk3.1"><i class="fa fa-check"></i><b>3.1</b> Step 1: Download</a></li>
 <li class="chapter" data-level="3.2" data-path="Desk3.html"><a href="Desk3.html#Desk3.2"><i class="fa fa-check"></i><b>3.2</b> Step 2: Create New Repo</a></li>
 <li class="chapter" data-level="3.3" data-path="Desk3.html"><a href="Desk3.html#Desk3.3"><i class="fa fa-check"></i><b>3.3</b> Step 3: Set up Desktop</a></li>
-<li class="chapter" data-level="3.4" data-path="Desk3.html"><a href="Desk3.html#Desk3.4"><i class="fa fa-check"></i><b>3.4</b> Step 4: Copy files into your local .git repo</a></li>
+<li class="chapter" data-level="3.4" data-path="Desk3.html"><a href="Desk3.html#Desk3.4"><i class="fa fa-check"></i><b>3.4</b> Step 4: Copy files into your local Git repo</a></li>
 <li class="chapter" data-level="3.5" data-path="Desk3.html"><a href="Desk3.html#Desk3.5"><i class="fa fa-check"></i><b>3.5</b> Step 5: Upload to GitHub</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="RStud4.html"><a href="RStud4.html"><i class="fa fa-check"></i><b>4</b> Setup Git in RStudio</a>
@@ -164,18 +163,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="RStud4.html"><a href="RStud4.html#RStud4.1"><i class="fa fa-check"></i><b>4.1</b> Step 1: Download</a></li>
 <li class="chapter" data-level="4.2" data-path="RStud4.html"><a href="RStud4.html#RStud4.2"><i class="fa fa-check"></i><b>4.2</b> Step 2: Create New Repo</a></li>
 <li class="chapter" data-level="4.3" data-path="RStud4.html"><a href="RStud4.html#RStud4.3"><i class="fa fa-check"></i><b>4.3</b> Step 3: Configure RStudio</a></li>
-<li class="chapter" data-level="4.4" data-path="RStud4.html"><a href="RStud4.html#RStud4.4"><i class="fa fa-check"></i><b>4.4</b> Step 4: Initializing a .git repo from RStudio</a></li>
+<li class="chapter" data-level="4.4" data-path="RStud4.html"><a href="RStud4.html#RStud4.4"><i class="fa fa-check"></i><b>4.4</b> Step 4: Clone the Repository from RStudio</a></li>
 <li class="chapter" data-level="4.5" data-path="RStud4.html"><a href="RStud4.html#RStud4.5"><i class="fa fa-check"></i><b>4.5</b> Step 5: Stage, commit and push</a></li>
-<li class="chapter" data-level="4.6" data-path="RStud4.html"><a href="RStud4.html#RStud4.6"><i class="fa fa-check"></i><b>4.6</b> Step 6: Link RStudio to existing local .git repo</a></li>
+<li class="chapter" data-level="4.6" data-path="RStud4.html"><a href="RStud4.html#RStud4.6"><i class="fa fa-check"></i><b>4.6</b> Extra: Link RStudio to existing local Git repo</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="Best5.html"><a href="Best5.html"><i class="fa fa-check"></i><b>5</b> GitHub Best Practices</a>
+<li class="chapter" data-level="5" data-path="Branch5.html"><a href="Branch5.html"><i class="fa fa-check"></i><b>5</b> GitHub Branch</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="Best5.html"><a href="Best5.html#Best5.1"><i class="fa fa-check"></i><b>5.1</b> Use a unique repository for each project</a></li>
-<li class="chapter" data-level="5.2" data-path="Best5.html"><a href="Best5.html#Best5.2"><i class="fa fa-check"></i><b>5.2</b> Use branches to avoid heartache</a></li>
-<li class="chapter" data-level="5.3" data-path="Best5.html"><a href="Best5.html#Best5.3"><i class="fa fa-check"></i><b>5.3</b> Create a meaningful .gitignore file</a></li>
-<li class="chapter" data-level="5.4" data-path="Best5.html"><a href="Best5.html#Best5.4"><i class="fa fa-check"></i><b>5.4</b> Define the code owner</a></li>
-<li class="chapter" data-level="5.5" data-path="Best5.html"><a href="Best5.html#Best5.5"><i class="fa fa-check"></i><b>5.5</b> Don’t let your password leak into your code</a></li>
-<li class="chapter" data-level="5.6" data-path="Best5.html"><a href="Best5.html#Best5.6"><i class="fa fa-check"></i><b>5.6</b> Don’t commit an crime</a></li>
+<li class="chapter" data-level="5.1" data-path="Branch5.html"><a href="Branch5.html#Branch5.1"><i class="fa fa-check"></i><b>5.1</b> Step 1: Create a branch</a></li>
+<li class="chapter" data-level="5.2" data-path="Branch5.html"><a href="Branch5.html#Branch5.2"><i class="fa fa-check"></i><b>5.2</b> Step 2: Name your branch</a></li>
+<li class="chapter" data-level="5.3" data-path="Branch5.html"><a href="Branch5.html#Branch5.3"><i class="fa fa-check"></i><b>5.3</b> Step 3: Make changes</a></li>
+<li class="chapter" data-level="5.4" data-path="Branch5.html"><a href="Branch5.html#Branch5.4"><i class="fa fa-check"></i><b>5.4</b> Step 4: Push changes</a></li>
+<li class="chapter" data-level="5.5" data-path="Branch5.html"><a href="Branch5.html#Branch5.5"><i class="fa fa-check"></i><b>5.5</b> Step 5: Compare &amp; pull request</a></li>
+<li class="chapter" data-level="5.6" data-path="Branch5.html"><a href="Branch5.html#Branch5.6"><i class="fa fa-check"></i><b>5.6</b> Step 6: Delete branch</a></li>
+<li class="chapter" data-level="5.7" data-path="Branch5.html"><a href="Branch5.html#Branch5.7"><i class="fa fa-check"></i><b>5.7</b> Tips to keep you popular</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="Share6.html"><a href="Share6.html"><i class="fa fa-check"></i><b>6</b> Sharing GitHub Scripts</a>
 <ul>
@@ -186,10 +186,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.2.2" data-path="Share6.html"><a href="Share6.html#Share6.2.2"><i class="fa fa-check"></i><b>6.2.2</b> Step-by-Step</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="Resource7.html"><a href="Resource7.html"><i class="fa fa-check"></i><b>7</b> GitHub Resources</a>
+<li class="chapter" data-level="7" data-path="Best7.html"><a href="Best7.html"><i class="fa fa-check"></i><b>7</b> GitHub Best Practices</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="Resource7.html"><a href="Resource7.html#Resource7.1"><i class="fa fa-check"></i><b>7.1</b> RStudio Resources</a></li>
-<li class="chapter" data-level="7.2" data-path="Resource7.html"><a href="Resource7.html#Resource7.2"><i class="fa fa-check"></i><b>7.2</b> GitHub Desktop Resources</a></li>
+<li class="chapter" data-level="7.1" data-path="Best7.html"><a href="Best7.html#Best7.1"><i class="fa fa-check"></i><b>7.1</b> Use a unique repository for each project</a></li>
+<li class="chapter" data-level="7.2" data-path="Best7.html"><a href="Best7.html#Best7.2"><i class="fa fa-check"></i><b>7.2</b> Use branches to avoid heartache</a></li>
+<li class="chapter" data-level="7.3" data-path="Best7.html"><a href="Best7.html#Best7.3"><i class="fa fa-check"></i><b>7.3</b> Create a meaningful <code>.gitignore</code> file</a></li>
+<li class="chapter" data-level="7.4" data-path="Best7.html"><a href="Best7.html#Best7.4"><i class="fa fa-check"></i><b>7.4</b> Define the code owner</a></li>
+<li class="chapter" data-level="7.5" data-path="Best7.html"><a href="Best7.html#Best7.5"><i class="fa fa-check"></i><b>7.5</b> Don’t let your password leak into your code</a></li>
+<li class="chapter" data-level="7.6" data-path="Best7.html"><a href="Best7.html#Best7.6"><i class="fa fa-check"></i><b>7.6</b> Don’t commit a crime</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Resource8.html"><a href="Resource8.html"><i class="fa fa-check"></i><b>8</b> GitHub Resources</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Resource8.html"><a href="Resource8.html#Resource8.1"><i class="fa fa-check"></i><b>8.1</b> RStudio Resources</a></li>
+<li class="chapter" data-level="8.2" data-path="Resource8.html"><a href="Resource8.html#Resource8.2"><i class="fa fa-check"></i><b>8.2</b> GitHub Desktop Resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -211,79 +220,82 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Git2" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> What are Git and GitHub?</h1>
+<div id="Git2" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> What are Git and GitHub?<a href="Git2.html#Git2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Trying to find instructions on how to use git and GitHub online is notoriously difficult for beginners. You’ll often come across instructions like this:</p>
 <blockquote>
-<p>Doing X is easy. All you have to do is open up a terminal and type git -s -x -what -thehell -doesthisallevenmean</p>
+<p>Doing X is easy. All you have to do is open up a terminal and type</p>
+<p><code>git -s -x -what -thehell -doesthisallevenmean</code></p>
 </blockquote>
-<p>Thankfully, using git and GitHub is super easy and you don’t have to use the command line at all to benefit from these tools.</p>
-<p>To get started, it is important to know what git and GitHub are and how they differ.</p>
-<p>Image credit: devmountian.com</p>
-<div id="Git2.1" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Git</h2>
-<p><em>Git</em> is software that (usually) runs on your computer. It is used to tracks all changes within a particular folder. Any change within that folder — a deleted file, a new line in a file, or a single changed letter in a single file — is tracked. It’s as if Microsoft word’s “Track Changes” function donned a cape, started solving crime, and kept meticulous notes all the while.</p>
-<p>A folder on your computer that is tracked by .git is called a <code>repository</code> or <code>repo</code> for short. The main difference between a .git repo and a regular folder on your computer is that a git repo has a folder within it named .git. It’s within this .git folder that all the changes in the main folder are tracked. Other than that, a git repo is just a folder on your computer like any other, but with new and wonderful powers.</p>
+<p>Thankfully, using Git and GitHub doesn’t have to be this hard! You don’t even have to use the command line at all to benefit from these tools.</p>
+<p>To get started, it is important to know what Git and GitHub are and how they differ.</p>
+<div id="Git2.1" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Git<a href="Git2.html#Git2.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Git</em> is software that (usually) runs on your computer. It is used to track all changes within a particular folder. Any change within that folder — a deleted file, a new line in a file, or a single changed letter in a single file — is tracked. It’s as if Microsoft word’s “Track Changes” function donned a cape, started solving crime, and kept meticulous notes all the while.</p>
+<p>A folder on your computer that is tracked by Git is called a <code>repository</code> or <code>repo</code> for short. The main difference between a Git repo and a regular folder on your computer is that a Git repo has a folder within it named <code>.git</code>. It’s within this <code>.git</code> folder that all the changes in the main folder are tracked. Other than that, a Git repo is just a folder on your computer like any other, but with new and wonderful powers.</p>
 </div>
-<div id="Git2.2" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> GitHub</h2>
-<p><em>GitHub</em> is an internet service that provides online cloud hosting for .git repos, as well as useful tools for sharing and collaboration. You don’t have to have a GitHub account to use .git, and you don’t even have to have git installed on your computer to use GitHub. But if you want a cloud backup, want to sync your work to multiple computer, or especially if you want to collaborate or share your work with others (or copy their work!), you’ll want to use both .git and GitHub.</p>
+<div id="Git2.2" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> GitHub<a href="Git2.html#Git2.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>GitHub</em> is an internet service that provides online cloud hosting for Git repos, as well as useful tools for sharing and collaboration. You don’t have to have a GitHub account to use Git, and you don’t have to have Git installed on your computer to use GitHub. But if you want a cloud backup, want to sync your work to multiple computers, or especially if you want to collaborate or share your work with others (or use/contribute to their work!), you’ll want to use both Git and GitHub.</p>
 <blockquote>
-<p>.git tracks all changes within a particular folder (aka git repo) on your computer</p>
+<p><strong>Git</strong> tracks all changes within a particular folder (aka git repo) on your computer</p>
 </blockquote>
 <blockquote>
-<p>GitHub offers a way to backup or sync your .git repos, or to collaborate with others</p>
+<p><strong>GitHub</strong> offers a way to backup or sync your Git repos, or to collaborate with others</p>
 </blockquote>
-<p>If you’re a fancy pants programmer you may want to use git from the command line (e.g., terminal or bash depending on your situation) so you can look cool, and admittedly have more fine-grained control over the process. But if you’re like the rest of us, and if you’re reading this document right now, you want a more user- and beginner-friendly option.</p>
 <p><img src="images/Git0.PNG" width="700px" style="display: block; margin: auto;" /></p>
 <p>Image credit: devmountain.com</p>
+<p>If you’re a fancy pants programmer you may want to use Git from the command line (e.g., terminal or bash depending on your situation) so you can look cool, and admittedly have more fine-grained control over the process. But if you’re like the rest of us, and if you’re reading this document right now, you may want a more user- and beginner-friendly option.</p>
 </div>
-<div id="Git2.3" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> .git the language</h2>
-<p>Were you the kid that was tormented by your siblings speaking Pig Latin (also known as “Igpay Atinlay”) and no matter how hard you tried, you couldn’t figure it out. Learning to use .git and Github can feel like learning a new language. But we promise it is easier than Pig Latin.</p>
-<p>When working with .git and GitHub, you are going to see the words <code>repo</code>, <code>origin</code>, <code>commit</code>, <code>push</code>, <code>pull</code>, <code>clone</code>, <code>fork</code>, and <code>branch</code>, among others. We will start with some basic definitions here, and in later chapters will elaborate on terms as necessary.</p>
+<div id="Git2.3" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Git the language?<a href="Git2.html#Git2.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Were you the kid that was tormented by your siblings speaking Pig Latin (also known as “Igpay Atinlay”) and no matter how hard you tried, you couldn’t figure it out? Learning to use Git and GitHub can feel like learning a new language. But we promise it is easier than Pig Latin.</p>
+<p>When working with Git and GitHub, you are going to see the words <code>repo</code>, <code>origin</code>, <code>commit</code>, <code>push</code>, <code>pull</code>, <code>clone</code>, <code>fork</code>, and <code>branch</code>, among others. We will start with some basic definitions here, and in later chapters will elaborate on terms as necessary.</p>
 <p><strong>repo(sitory)</strong> - a folder whose contents are is tracked by Git. A repo can exist locally (on your computer) as a remote repository (on GitHub), or both.</p>
-<p><strong>origin</strong> - the primary .git repo, against which other copies are compared. In our examples, we will create the origin repo in GitHub</p>
-<p><strong>push</strong> - sends changes from your local .git repo to the remote repository (e.g. GitHub)</p>
-<p><strong>pull</strong> - gets changes from the cloud and updates your local .git repo</p>
+<p><strong>origin</strong> - the primary Git repo, against which other copies are compared. In our examples, we will create the origin repo in GitHub</p>
+<p><strong>push</strong> - send changes from your local Git repo to the remote repository (e.g. GitHub)</p>
+<p><strong>pull</strong> - get changes from the cloud and updates your local Git repo</p>
 <blockquote>
 <p>Note: this is different from a <code>pull request</code> which is when you want someone else to incorporate your changes into their GitHub repo. More on this later.</p>
 </blockquote>
-<p><strong>commit</strong> - create a named version of a set of one or more changes to a local .git repo, to be pushed to the cloud. Also used to refer to this named state. In other words, when you commit your changes, you create a commit.</p>
-<p><strong>clone</strong> - creates a copy of a git repo. In our examples you the repos will first be created in GitHub (i.e., origin) and then cloned to your local .git repo on your computer.</p>
+<p><strong>commit</strong> - create a named version of a set of one or more changes to a local Git repo. Like a bookmark of the current changes made. Often will be pushed to GitHub, but can be local only. To add to the confusion, <code>commit</code> in Git language can be a verb and a noun! In other words, when you commit your changes, you create a commit.</p>
+<p><strong>clone</strong> - create a copy of a Git repo maintaining a direct link to the original repository. In our examples, the repos will first be created on GitHub (i.e., origin) and then <em>cloned</em> to your local Git repo on your computer.</p>
 <blockquote>
-<p>Note: if you clone a repo from someone else GitHub account, you cannot contribute to the repo. Generally, you will make a <code>fork</code> if you are working collaboratively on a repo.</p>
+<p>Note: if you clone a repo from someone else GitHub account, you cannot contribute to their repo unless they have given you access, but if you do you are contributing directly to the repository.</p>
 </blockquote>
-<p><strong>fork</strong> - creates a copy of a repo which maintained a connection between your local repo and the origin repo. Think of a folk as a bridge between the original repo and the local copy where changes can be made. After making and testing changes, you can contribute back to the original repo using a <code>pull request</code>.</p>
-<p><strong>branch</strong> - is a new/separate version of the main repo. It is a way to develop new or modification to your R scripts, while not affecting the main part of the project. It is a feature in most version control systems.</p>
+<p><strong>fork</strong> - create a copy of a repo which maintains a loose connection between your local repo and the origin repo. Think of a fork as a bridge between the original repo and the local copy where changes can be made. After making and testing changes, you can contribute back to the original repo using a <code>pull request</code> which must be approved by the repository owner.</p>
+<p><strong>branch</strong> - new/separate versions of the repo. It is a way to modify your scripts, while not changing your original code. If you’re happy with your changes you can eventually merge them into your original code. It is a feature in most version control systems.</p>
 <blockquote>
-<p>Note: the primary or default branch in Git is the <code>master branch</code> (sometimes referred to as <code>main</code> branch). Think of the master branch as the trunk of the tree. Every repo contains at minimum this one branch, which is created when the repo is initialized.</p>
+<p>Note: the primary or default branch in Git is the <code>master branch</code> (sometimes referred to as <code>main</code> branch). Think of the master branch as the trunk of the tree. Every repo contains at minimum this one branch, which is created when the repo is initialized. If you want to test new changes, you would create another branch which could then be merged later. More on this later!</p>
 </blockquote>
 </div>
-<div id="Git2.4" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> .git to GitHub GUI</h2>
-<p>There are multiple graphical interfaces for using .git and GitHub. This document will provide instructions for two methods: <a href="Desk3.html#Desk3">GitHub Desktop</a> and <a href="RStud4.html#RStud4">RStudio</a>.</p>
+<div id="Git2.4" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Git to GitHub GUIs<a href="Git2.html#Git2.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are multiple graphical interfaces for using Git and GitHub. This document will provide instructions for two methods: <a href="Desk3.html#Desk3">GitHub Desktop</a> and <a href="RStud4.html#RStud4">RStudio</a>.</p>
 <p>Q: Which option is for you??</p>
-<p>A: It depends. GitHub Desktop and RStudio offer different advantages. Which is for you will largely depend on how you plan to use and interact with GitHub.</p>
+<p>A: It depends. GitHub Desktop and RStudio offer different advantages. Which is best for you will largely depend on how you plan to use and interact with GitHub.</p>
 <ul>
 <li><p>If you are not actively developing R code, and/or just need to get existing files into GitHub, GitHub Desktop is the easiest method, with the least amount of configuration.</p></li>
 <li><p>If you are actively writing analytical scripts in R, then using RStudio is recommend because there will be some additional instructions for using <code>R Projects</code> to organize your workflow and annotate your code.</p></li>
 </ul>
-<p>You can use multiple .git GUI at the same time without any issues so feel free to set up and get familiar with both.</p>
+<p>You can use multiple Git GUIs at the same time without any issues so feel free to set up and get familiar with both.</p>
 </div>
-<div id="Git2.5" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Getting Started</h2>
-<p>Regardless of the GUI you select to use, there are a few steps you need to take to get started.</p>
+<div id="Git2.5" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Getting Started<a href="Git2.html#Git2.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Regardless of the GUI you choose to use, there are a few steps you need to take to get started.</p>
 <p>First, get the software and account that you need:</p>
 <ol style="list-style-type: decimal">
-<li>Download and install git on your computer from here: <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></li>
+<li>Download and install <code>git</code> on your computer from here: <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></li>
 </ol>
 <p><img src="images/Git1.PNG" width="700px" style="display: block; margin: auto;" /></p>
+<blockquote>
+<p>Note: Most linux users will already have <code>git</code> installed, or should use their system’s repositories to install <code>git</code></p>
+</blockquote>
 <ol start="2" style="list-style-type: decimal">
 <li>Sign up for a GitHub account here: <a href="https://github.com/join" class="uri">https://github.com/join</a></li>
 </ol>
 <p><img src="images/Git2.PNG" width="700px" style="display: block; margin: auto;" /></p>
-<p>Now you are ready to become a git master. <a href="Desk3.html#Desk3">Chapter 3</a> will get you started with GitHub Desktop and <a href="RStud4.html#RStud4">Chapter 4</a> will get you started with RStudio.</p>
+<p>Now you are ready to become a Git master! <a href="Desk3.html#Desk3">Chapter 3</a> will get you started with GitHub Desktop and <a href="RStud4.html#RStud4">Chapter 4</a> will get you started with RStudio.</p>
 <p>Some elements of these Chapter are repetitive so that users can choose one or the other. If you choose to go with both, then skim over the repetitive parts.</p>
 <p>Choose your own adventure!</p>
 
